@@ -1,14 +1,25 @@
-import React from 'react';
+import React,{Component} from 'react';
+import {Route} from 'react-router';
 
-function App() {
-  return (
+import Header from './Header'
+import Home from './Home';
+
+class App extends Component{
+  render() {
+
+
+    return (
     <div>
-    <header><h1>Overlays App</h1></header>
+
+    <Header />
     <main className='App'>
-    <p>Great start</p>
+    <Route
+    path="/"
+    component={Home}
+    />
     </main>
     </div>
-  );
+  )
 }
-
+}
 export default App;
