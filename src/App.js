@@ -2,9 +2,12 @@ import React from 'react';
 
 function App() {
   return (
+    <div>
+    <header><h1>Overlays App</h1></header>
     <main className='App'>
-      {/* content goes here */}
+    <p>Great start</p>
     </main>
+    </div>
   );
 }
 
