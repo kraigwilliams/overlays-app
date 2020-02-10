@@ -12,7 +12,7 @@ return(
 
 
     <p>
-     <Link to="#">Create Account</Link> or <Link to="#">Login</Link>
+     <Link to="">Create Account</Link> or <Link to="/login">Login</Link>
 
     </p>
     </>

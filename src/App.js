@@ -3,7 +3,7 @@ import {Route} from 'react-router';
 
 import Header from './Header'
 import Home from './Home';
-
+import Login from './Login';
 class App extends Component{
   render() {
 
@@ -16,6 +16,11 @@ class App extends Component{
     <Route
     path="/"
     component={Home}
+    />
+
+    <Route
+    path="/login"
+    component={Login}
     />
     </main>
     </div>
