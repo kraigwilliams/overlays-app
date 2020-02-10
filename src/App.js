@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
 import {Route} from 'react-router';
 
-import Header from './Header'
-import Home from './Home';
-import Login from './Login';
+import Header from './Header/Header'
+import Home from './Home/Home';
+import Login from './Login/Login';
 class App extends Component{
   render() {
 
@@ -14,7 +14,7 @@ class App extends Component{
     <Header />
     <main className='App'>
     <Route
-    path="/"
+    exact path="/"
     component={Home}
     />
 
