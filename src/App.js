@@ -6,7 +6,7 @@ import Home from './Home/Home';
 import Login from './Login/Login';
 import Submit from './Submit/Submit';
 import Topics from './Topics/Topics';
-
+import CreateAccount from './Create/CreateAccount'
 
 
 class App extends Component{
@@ -37,6 +37,12 @@ class App extends Component{
     path="/topics"
     component={Topics}
     />
+
+    <Route
+    path="/create-account"
+    component={CreateAccount}
+    />
+    
     </main>
     </div>
   )

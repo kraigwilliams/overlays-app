@@ -8,7 +8,7 @@ topics:[]
 
 
 componentDidMount(){
-    fetch('http://localhost:8000/topics')
+    fetch('http://localhost:8000/api/topics')
     .then(res=>res.json())
     .then(data=>
         this.setState({topics:data})

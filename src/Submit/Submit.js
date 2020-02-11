@@ -8,7 +8,7 @@ class Submit extends Component {
           topic_url,
 
       }= event.target
-      fetch('http://localhost:8000/topics',{
+      fetch('http://localhost:8000/api/topics',{
         'method':'POST',
         headers:{
             'content-type': 'application/json'
