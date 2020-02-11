@@ -4,6 +4,11 @@ import {Route} from 'react-router';
 import Header from './Header/Header'
 import Home from './Home/Home';
 import Login from './Login/Login';
+import Submit from './Submit/Submit';
+import Topics from './Topics/Topics';
+
+
+
 class App extends Component{
   render() {
 
@@ -21,6 +26,16 @@ class App extends Component{
     <Route
     path="/login"
     component={Login}
+    />
+
+    <Route
+    path="/submit"
+    component={Submit}
+    
+    />
+    <Route
+    path="/topics"
+    component={Topics}
     />
     </main>
     </div>
