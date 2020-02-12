@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import { Link } from "react-router-dom";
-
+import config from '../config'
 class Topics extends Component {
   state = {
     topics: [],
@@ -8,7 +8,8 @@ class Topics extends Component {
   };
 
   componentDidMount() {
-    fetch("http://localhost:8000/api/users/topics")
+    fetch(`${config.API_ENDPOINT}/users/topics`)
+    //fetch("http://localhost:8000/api/users/topics")
       .then(res => res.json())
       .then(data => this.setState({ topics: data }));
       //fetch("http://localhost:8000/api/users/groups")

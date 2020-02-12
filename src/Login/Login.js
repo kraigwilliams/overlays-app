@@ -1,13 +1,20 @@
 import React, { Component } from 'react'
 import AuthApiService from '../services/auth-api-service'
 import { Button, Input } from '../Utils/Utils'
+import {Redirect } from 'react-router-dom';
 
 export default class LoginForm extends Component {
   static defaultProps = {
     onLoginSuccess: () => {}
   }
 
-  state = { error: null }
+  state = { error: null, }
+
+
+  loginRedirect(){
+    if(this.state.redirect===true)
+    return (<Redirect to='/topics'/>)
+  }
 
   handleSubmitJwtAuth = ev => {
     ev.preventDefault()
@@ -21,12 +28,22 @@ export default class LoginForm extends Component {
       .then(res => {
         user_name.value = ''
         password.value = ''
+       
+        this.setState({redirect:true})
+       console.log('redirect',this.state.redirect)
+       this.loginRedirect()
+       this.props.history.push('/');
+        
+
         this.props.onLoginSuccess()
+       
       })
       .catch(res => {
         this.setState({ error: res.error })
       })
+      
   }
+  
 
   render() {
     const { error } = this.state
