@@ -4,9 +4,11 @@ import {Route} from 'react-router';
 import Header from './Header/Header'
 import Home from './Home/Home';
 import Login from './Login/Login';
+import PrivateRoute from './Utils/PrivateRoute';
+import PublicOnlyRoute from './Utils/PublicOnlyRoute';
 import Submit from './Submit/Submit';
 import Topics from './Topics/Topics';
-//import CreateAccount from './Create/CreateAccount'
+import CreateGroup from './Components/Groups/CreateGroups'
 import Register from './Register/Register';
 
 class App extends Component{
@@ -23,26 +25,29 @@ class App extends Component{
     component={Home}
     />
 
-    <Route
+    <PublicOnlyRoute
     path="/login"
     component={Login}
     />
 
-    <Route
+    <PrivateRoute
     path="/submit"
     component={Submit}
     
     />
-    <Route
+    <PrivateRoute
     path="/topics"
     component={Topics}
     />
 
-    <Route
+    <PublicOnlyRoute
     path="/register"
     component={Register}
     />
-    
+    <PrivateRoute
+    path="/create-group"
+    component={CreateGroup}
+    />
     </main>
     </div>
   )
