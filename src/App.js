@@ -6,8 +6,8 @@ import Home from './Home/Home';
 import Login from './Login/Login';
 import Submit from './Submit/Submit';
 import Topics from './Topics/Topics';
-import CreateAccount from './Create/CreateAccount'
-
+//import CreateAccount from './Create/CreateAccount'
+import Register from './Register/Register';
 
 class App extends Component{
   render() {
@@ -39,8 +39,8 @@ class App extends Component{
     />
 
     <Route
-    path="/create-account"
-    component={CreateAccount}
+    path="/register"
+    component={Register}
     />
     
     </main>
