@@ -20,7 +20,7 @@ class App extends Component{
 
     <Header />
     <main className='App'>
-    <Route
+    <PublicOnlyRoute
     exact path="/"
     component={Home}
     />
