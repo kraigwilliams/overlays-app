@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import config from '../config'
-
+import config from '../../config'
+import topicsApiService from '../../services/topics-api-service';
 class Submit extends Component {
   onSubmit = event => {
     event.preventDefault();
     const { topic_name, topic_url } = event.target;
-    fetch(`${config.API_ENDPOINT}/topics`_
+    fetch(`${config.API_ENDPOINT}/topics`,{
     //fetch("http://localhost:8000/api/topics", {
       method: "POST",
       headers: {

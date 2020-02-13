@@ -1,17 +1,21 @@
 import React,{Component} from 'react';
 import {Route} from 'react-router';
 
-import Header from './Header/Header'
-import Home from './Home/Home';
-import Login from './Login/Login';
-import PrivateRoute from './Utils/PrivateRoute';
-import PublicOnlyRoute from './Utils/PublicOnlyRoute';
-import Submit from './Submit/Submit';
-import Topics from './Topics/Topics';
-import CreateGroup from './Components/Groups/CreateGroups'
-import Register from './Register/Register';
+import Header from '../Header/Header'
+import Home from '../Home/Home';
+//import Login from '../Login/Login';
+import LoginForm from '../../Routes/Login/Login'
+import PrivateRoute from '../Utils/PrivateRoute';
+import PublicOnlyRoute from '../Utils/PublicOnlyRoute';
+import Submit from '../Submit/Submit';
+import Topics from '../Topics/Topics';
+import CreateGroup from '../Groups/CreateGroups'
+import Register from '../Register/Register';
 
 class App extends Component{
+
+
+
   render() {
 
 
@@ -27,7 +31,8 @@ class App extends Component{
 
     <PublicOnlyRoute
     path="/login"
-    component={Login}
+    component={LoginForm}
+
     />
 
     <PrivateRoute

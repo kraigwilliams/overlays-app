@@ -1,20 +1,22 @@
 import React, { Component } from 'react'
-import AuthApiService from '../services/auth-api-service'
-import { Button, Input } from '../Utils/Utils'
-import {Redirect } from 'react-router-dom';
+import TokenService from '../../services/token-service';
 
-export default class LoginForm extends Component {
+import AuthApiService from '../../services/auth-api-service'
+import { Button, Input } from '../Utils/Utils'
+
+
+ class LoginForm extends Component {
   static defaultProps = {
     onLoginSuccess: () => {}
   }
 
-  state = { error: null, }
+  state = { error: null }
 
 
-  loginRedirect(){
-    if(this.state.redirect===true)
-    return (<Redirect to='/topics'/>)
-  }
+  // loginRedirect(){
+  //   if(this.state.redirect===true)
+  //   return (<Redirect to='/topics'/>)
+  // }
 
   handleSubmitJwtAuth = ev => {
     ev.preventDefault()
@@ -26,18 +28,18 @@ export default class LoginForm extends Component {
       password: password.value,
     })
       .then(res => {
+        console.log("this is back where I need it ", res)
         user_name.value = ''
         password.value = ''
-       
-        this.setState({redirect:true})
-       console.log('redirect',this.state.redirect)
-       this.loginRedirect()
-       this.props.history.push('/');
-        
-
+     //  TokenService.saveAuthToken(res.authToken)
+        //this.setState({redirect:true})
+      // console.log('redirect',this.state.redirect)
+      // this.loginRedirect()
+      
         this.props.onLoginSuccess()
-       
+        this.props.history.push('/topics');
       })
+      
       .catch(res => {
         this.setState({ error: res.error })
       })
@@ -83,3 +85,5 @@ export default class LoginForm extends Component {
     )
   }
 }
+
+export default LoginForm;

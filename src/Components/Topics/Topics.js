@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import { Link } from "react-router-dom";
-import config from '../config'
+import config from '../../config'
 class Topics extends Component {
   state = {
     topics: [],

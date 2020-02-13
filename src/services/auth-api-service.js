@@ -1,6 +1,7 @@
 import config from '../config'
 import TokenService from './token-service'
 import IdleService from './idle-service'
+//import {Redirect } from 'react-router-dom';
 
 const AuthApiService = {
   postUser(user) {
@@ -38,12 +39,16 @@ const AuthApiService = {
           3. queue a call to the refresh endpoint based on the JWT's exp value
         */
         TokenService.saveAuthToken(res.authToken)
-        IdleService.regiserIdleTimerResets()
-        TokenService.queueCallbackBeforeExpiry(() => {
-          AuthApiService.postRefreshToken()
-        })
+        console.log("this is res", res)
+         IdleService.regiserIdleTimerResets()
+        //TokenService.queueCallbackBeforeExpiry(() => {
+          //AuthApiService.postRefreshToken()
+          
+        //})
+
         return res
       })
+    
   },
   postRefreshToken() {
     return fetch(`${config.API_ENDPOINT}/auth/refresh`, {
