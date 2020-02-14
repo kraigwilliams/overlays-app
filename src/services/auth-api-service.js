@@ -41,10 +41,9 @@ const AuthApiService = {
         TokenService.saveAuthToken(res.authToken)
         console.log("this is res", res)
          IdleService.regiserIdleTimerResets()
-        //TokenService.queueCallbackBeforeExpiry(() => {
-          //AuthApiService.postRefreshToken()
-          
-        //})
+        TokenService.queueCallbackBeforeExpiry(() => {
+          AuthApiService.postRefreshToken()
+          })
 
         return res
       })
