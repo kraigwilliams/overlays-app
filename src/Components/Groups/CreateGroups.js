@@ -18,7 +18,7 @@ onSubmit= event=>{
     })
     .then(res => res.json())
     .then(data => {
-      console.log(data);
+  return    this.props.history.push('/topics');
     });
 
 }

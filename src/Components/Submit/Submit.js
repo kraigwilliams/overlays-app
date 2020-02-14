@@ -1,15 +1,18 @@
 import React, { Component } from "react";
 import config from '../../config'
-import topicsApiService from '../../services/topics-api-service';
+//import topicsApiService from '../../services/topics-api-service';
+import TokenService from '../../services/token-service';
+
 class Submit extends Component {
   onSubmit = event => {
     event.preventDefault();
     const { topic_name, topic_url } = event.target;
-    fetch(`${config.API_ENDPOINT}/topics`,{
+    fetch(`${config.API_ENDPOINT}/users/topics`,{
     //fetch("http://localhost:8000/api/topics", {
       method: "POST",
       headers: {
-        "content-type": "application/json"
+        "content-type": "application/json",
+        authorization:"bearer " + TokenService.getAuthToken()
       },
       body: JSON.stringify({
         topic_url: topic_url.value,
@@ -17,9 +20,11 @@ class Submit extends Component {
       })
     })
       .then(res => res.json())
-      .then(data => {
-        console.log(data);
-      });
+      .then(data => 
+        this.componentDidMount()
+        //this.props.history.push('/topics')
+        //console.log(data);
+      );
   };
 
   render() {

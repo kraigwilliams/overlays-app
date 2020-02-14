@@ -1,6 +1,10 @@
 import React, { Component, useState } from "react";
 import { Link } from "react-router-dom";
 import config from '../../config'
+import TokenService from '../../services/token-service'
+
+
+
 class Topics extends Component {
   state = {
     topics: [],
@@ -8,7 +12,11 @@ class Topics extends Component {
   };
 
   componentDidMount() {
-    fetch(`${config.API_ENDPOINT}/users/topics`)
+    fetch(`${config.API_ENDPOINT}/users/topics`,{
+      headers:{
+        authorization:"bearer " + TokenService.getAuthToken()
+      }
+    })
     //fetch("http://localhost:8000/api/users/topics")
       .then(res => res.json())
       .then(data => this.setState({ topics: data }));
