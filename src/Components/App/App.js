@@ -8,9 +8,10 @@ import LoginForm from '../../Routes/Login/Login'
 import PrivateRoute from '../Utils/PrivateRoute';
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute';
 import Submit from '../Submit/Submit';
-import Topics from '../Topics/Topics';
+import Topics from '../TopicsList/TopicsList';
 import CreateGroup from '../Groups/CreateGroups'
 import Register from '../Register/Register';
+import NewNote from '../NotesPage/NewNote'
 
 class App extends Component{
 
@@ -52,6 +53,11 @@ class App extends Component{
     <PrivateRoute
     path="/create-group"
     component={CreateGroup}
+    />
+
+    <PrivateRoute
+    path="/new-note"
+    component={NewNote}
     />
     </main>
     </div>
