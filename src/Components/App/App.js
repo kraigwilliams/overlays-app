@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Route} from 'react-router';
+import {Switch} from 'react-router';
 
 import Header from '../Header/Header'
 import Home from '../Home/Home';
@@ -8,10 +8,12 @@ import LoginForm from '../../Routes/Login/Login'
 import PrivateRoute from '../Utils/PrivateRoute';
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute';
 import Submit from '../Submit/Submit';
-import Topics from '../TopicsList/TopicsList';
+import TopicsList from '../TopicsList/TopicsList';
 import CreateGroup from '../Groups/CreateGroups'
 import Register from '../Register/Register';
 import NewNote from '../NotesPage/NewNote'
+import NoteListPage from '../NotesPage/NotesListPage';
+import AllNotes from '../NotesPage/AllNotes';
 
 class App extends Component{
 
@@ -25,6 +27,14 @@ class App extends Component{
 
     <Header />
     <main className='App'>
+<Switch>
+    <PrivateRoute
+    path="/topics/:topicId"
+    component={AllNotes}
+    /> 
+
+
+
     <PublicOnlyRoute
     exact path="/"
     component={Home}
@@ -43,7 +53,7 @@ class App extends Component{
     />
     <PrivateRoute
     path="/topics"
-    component={Topics}
+    component={TopicsList}
     />
 
     <PublicOnlyRoute
@@ -59,6 +69,8 @@ class App extends Component{
     path="/new-note"
     component={NewNote}
     />
+</Switch>
+   
     </main>
     </div>
   )

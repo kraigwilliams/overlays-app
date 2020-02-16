@@ -45,7 +45,7 @@ const TopicsApiService = {
         'authorization': `bearer ${TokenService.getAuthToken()}`,
       },
       body: JSON.stringify({
-        article_id: articleId,
+        article_id: group_name,
         text,
       }),
     })

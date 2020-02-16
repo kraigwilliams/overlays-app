@@ -10,27 +10,28 @@ class Submit extends Component {
   // }
 
   
-  // onSubmit = event => {
-  //   event.preventDefault();
-  //   const { topic_name, topic_url } = event.target;
-  //   fetch(`${config.API_ENDPOINT}/topics`,{
-  //   //fetch("http://localhost:8000/api/topics", {
-  //     method: "POST",
-  //     headers: {
-  //       "content-type": "application/json",
-  //       authorization:"bearer " + TokenService.getAuthToken()
-  //     },
-  //     body: JSON.stringify({
-  //       topic_url: topic_url.value,
-  //       topic_name: topic_name.value
-  //     })
-  //   })
-  //     .then(res => res.json())
-  //     .then(data =>  this.componentDidMount()
-  //       //this.props.history.push('/topics')
-  //       //console.log(data);
-  //     );
-  // };
+  onSubmit = event => {
+    event.preventDefault();
+    const { topic_name, topic_url } = event.target;
+    fetch(`${config.API_ENDPOINT}/topics`,{
+    
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        authorization:"bearer " + TokenService.getAuthToken()
+      },
+      body: JSON.stringify({
+        topic_url: topic_url.value,
+        topic_name: topic_name.value
+      })
+    })
+      .then(res => res.json())
+      .then( 
+        // this.componentDidMount()
+        this.props.history.push('/topics')
+        //console.log(data);
+      );
+  };
 
   render() {
     return (
