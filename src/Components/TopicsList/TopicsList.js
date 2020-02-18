@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import config from '../../config'
 import TokenService from '../../services/token-service'
 import NoteListPage from '../NotesPage/NotesListPage';
-import Nav from '../Nav/Nav'
+//import Nav from '../Nav/Nav'
 
 class TopicsList extends Component {
   state = {
@@ -34,7 +34,8 @@ class TopicsList extends Component {
   render() {
     return (
       <>
-        <Nav />
+        
+        
         <Link to="/submit">Submit New Topic</Link>
               <h2>YOUR TOPICS</h2>
 

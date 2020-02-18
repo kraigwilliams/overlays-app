@@ -1,11 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
  import './header.css'
+import Nav from '../Nav/Nav'
+
+
 function Header(){
 return(
-    <>
-    <Link to= "/"><header><h1 id="header">Overlays App</h1></header></Link>
-    </>
+    <header>
+    <Link to= "/"><h1 id="header">Overlays App</h1></Link>
+    <span id ="nav"><Nav /></span>
+    </header>
 )
 
 }

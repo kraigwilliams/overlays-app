@@ -14,7 +14,7 @@ componentDidMount(){
         return(
             <>
             <Link to="/logout">Logout</Link>
-            <nav><span>User Name</span></nav>
+            <nav><span>Logged in as User Name</span></nav>
             </>
             
             
