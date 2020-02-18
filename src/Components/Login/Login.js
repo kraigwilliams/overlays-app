@@ -13,10 +13,7 @@ import { Button, Input } from '../Utils/Utils'
   state = { error: null }
 
 
-  // loginRedirect(){
-  //   if(this.state.redirect===true)
-  //   return (<Redirect to='/topics'/>)
-  // }
+
 
   handleSubmitJwtAuth = ev => {
     ev.preventDefault()
@@ -28,7 +25,7 @@ import { Button, Input } from '../Utils/Utils'
       password: password.value,
     })
       .then(res => {
-        console.log("this is back where I need it ", res)
+       
         user_name.value = ''
         password.value = ''
      //  TokenService.saveAuthToken(res.authToken)

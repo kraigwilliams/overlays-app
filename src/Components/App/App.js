@@ -14,6 +14,7 @@ import Register from '../Register/Register';
 import NewNote from '../NotesPage/NewNote'
 import NoteListPage from '../NotesPage/NotesListPage';
 import AllNotes from '../NotesPage/AllNotes';
+import Logout from '../Logout/Logout'
 
 class App extends Component{
 
@@ -69,6 +70,12 @@ class App extends Component{
     path="/new-note"
     component={NewNote}
     />
+
+    <PrivateRoute
+    path="/logout"
+    component={Logout}
+    />
+
 </Switch>
    
     </main>
