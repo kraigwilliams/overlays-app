@@ -1,18 +1,27 @@
-import React from 'react';
+import React ,{Component} from 'react';
+import config from '../../config';
+import TokenService from '../../services/token-service'
 
+class Nav extends Component{
 
-function Nav(){
+componentDidMount(){
 
+// fetch()
+
+}
+
+    render(){
+        return(
+            <>
+            <nav><span>User Name</span></nav>
+            </>
+            
+            
+            )
+    }
     
-    
-
-return(
-<>
-<nav><span>User Name</span></nav>
-</>
 
 
-)
 
 
 }

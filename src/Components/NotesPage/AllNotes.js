@@ -1,6 +1,10 @@
 import React,{Component} from 'react';
 import config from '../../config'
 import TokenService from '../../services/token-service'
+//import Note from './Note'
+import {Link } from 'react-router-dom'
+import './notes.css'
+
 
 class AllNotes extends Component{
     
@@ -31,27 +35,34 @@ class AllNotes extends Component{
 
     }
 render(){
+//   <Note key={this.state.notes.id} note={this.state.notes} />
+  
+return(
+    <>
 
-    return(
-
-<>
-{this.state.notes.map(note=>{
-  return  <>
-<h3 >{note.note_title}</h3>
-<p>{note.note_contents}</p>
-</>
-})}
+    <Link to="/new-note">Add New Note</Link>
 
 
+    {this.state.notes.map(note=>{
+   return(
+    
+   <div className="all-notes">
+        <h2>{note.topic_name}</h2> 
+   <Link to="#"><h3>{note.note_title}</h3></Link>
+   <p>{note.note_contents}</p></div>)
+   }
+        )
 
-</>
 
+
+    }
+    </>
     )
-}
-
-
 
 
 }
 
+
+  }
+  
 export default AllNotes

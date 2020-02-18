@@ -12,6 +12,7 @@ class Submit extends Component {
   
   onSubmit = event => {
     event.preventDefault();
+  
     const { topic_name, topic_url } = event.target;
     fetch(`${config.API_ENDPOINT}/topics`,{
     
@@ -37,10 +38,11 @@ class Submit extends Component {
     return (
       <>
         <form onSubmit={this.onSubmit}>
+        <input type="text" name="topic_name" placeholder="Submit New Topic" />
+          
+          <br />
+          <br />
           <input type="text" name="topic_url" placeholder="Url to Add" />
-          <br />
-          <br />
-          <input type="text" name="topic_name" placeholder="Submit New Topic" />
           <br />
           <br />
           {/* <label htmlFor="Add to Topic"></label> */}
