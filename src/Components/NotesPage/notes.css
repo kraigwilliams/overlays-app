@@ -18,12 +18,11 @@
   font-family: "Coda Caption", sans-serif;
   color: #ffff94;
 }
-
 .note-form {
-  /* display:flex; */
-  /* flex-direction:column;
+   display:flex; 
+  flex-direction:column;
     align-content: center;
-    justify-content: center; */
+    justify-content: center; 
   border: 2px solid white;
   border-radius: 200px;
   margin-left: auto;
@@ -45,4 +44,12 @@ textarea {
   margin-top: 30px;
   margin-top: 30px;
   width: 200px;
+  text-align: center;
+}
+
+#note-label{
+  text-align:center;
+  width:200px;
+  margin-left:auto;
+  margin-right:auto;
 }
