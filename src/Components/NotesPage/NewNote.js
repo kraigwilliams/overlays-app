@@ -57,7 +57,8 @@ render(){
         <form className="note-form" onSubmit={this.onSubmit}>
           <label id="note-label" htmlFor="note_title">Enter Note Title</label>
             <input type="text" id="note_title" name="note_title"placeholder="Note Title"/><br/><br/>
-            <textarea name="note_contents" placeholder="Enter Note Text"></textarea><br/><br/>
+            <label id="note-label" htmlFor="note_contents">Enter Note Title</label>
+            <textarea id="note_contents" name="note_contents" placeholder="Enter Note Text"></textarea><br/><br/>
             <select name="from_topic">
                 {this.state.topics.map(topic=>{
                     return <option name={topic.id} value={topic.id}key={topic.id}>{topic.topic_name}</option>
