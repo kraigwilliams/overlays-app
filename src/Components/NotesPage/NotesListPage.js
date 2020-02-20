@@ -3,6 +3,8 @@ import React,{Component} from 'react'
 import {Link} from 'react-router-dom';
 import './notes.css';
 import config from '../../config'
+import TokenService from '../../services/token-service'
+
 
 class NoteListPage extends Component{
     componentDidMount(){
