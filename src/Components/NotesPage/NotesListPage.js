@@ -2,13 +2,29 @@ import React,{Component} from 'react'
 //import Note from './Note';
 import {Link} from 'react-router-dom';
 import './notes.css';
-
+import config from '../../config'
 
 class NoteListPage extends Component{
     componentDidMount(){
         console.log("this.props.topic",this.props.topic)
     }
-    
+  
+
+handleDelete= event=>{
+event.preventDefault();
+const topicId= this.props.topid.id
+fetch(`${config.API_ENDPOINT}/topic/${topicId}`,{
+method:"DELETE",
+headers: {
+  "content-type": "application/json",
+  authorization:"bearer " + TokenService.getAuthToken()
+}
+
+
+
+})
+}
+
 render(){
     //const topicId= this.props.match.params.TopicId
 return (
@@ -27,7 +43,8 @@ return (
         </select> */}
        <Link to={`/topics/${this.props.topic.id}`}>View Notes</Link><br/>
        <Link to="/new-note">Add Note to Topic</Link><br/>
-        {/* <button>Share</button> */}
+
+        <button onClick={this.handleDelete}>Delete</button> 
       </p>
     </div>
   )

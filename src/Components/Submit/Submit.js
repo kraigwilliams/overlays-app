@@ -29,9 +29,9 @@ class Submit extends Component {
     })
       .then(res => res.json())
       .then( 
-        // this.componentDidMount()
+        
         this.props.history.push('/topics')
-        //console.log(data);
+      
       );
   };
 
