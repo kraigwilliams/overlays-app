@@ -1,0 +1,19 @@
+.home-page{
+display:flex;
+flex-direction: row;
+justify-content: center;
+padding-top:200px;
+
+}
+
+.home-left{
+margin-right:100px;
+}
+
+/* .home-right{
+    margin-right:100px;
+} */
+
+.home-page *{
+    font-size: 30px;
+}
