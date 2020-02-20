@@ -1,20 +1,59 @@
-.all-notes{
-    font-family: 'Coda Caption', sans-serif;
-    border: 2px solid #7CB317;
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
+.all-notes {
+  font-family: "Coda Caption", sans-serif;
+  border: 2px solid #7cb317;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.all-topics{
-    font-family: 'Coda Caption', sans-serif;
-    border:2px solid #DD6EFF;
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;    
+.all-topics {
+  font-family: "Coda Caption", sans-serif;
+  border: 2px solid #dd6eff;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.topics-heading{
-    font-family: 'Coda Caption', sans-serif;
-    color:#FFFF94;
+.topics-heading {
+  font-family: "Coda Caption", sans-serif;
+  color: #ffff94;
+}
+.note-form {
+   display:flex; 
+  flex-direction:column;
+    align-content: center;
+    justify-content: center; 
+  border: 2px solid white;
+  border-radius: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 50px;
+  text-align: center;
+  padding: 30px;
+}
+
+.note-form input,
+select,
+textarea {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  border-radius: 100px;
+  border: 2px solid blue;
+  margin-top: 30px;
+  margin-top: 30px;
+  width: 200px;
+  text-align: center;
+}
+
+#note-label{
+  text-align:center;
+  width:200px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.note-form textarea{
+height:200px;
+width:400px;
 }

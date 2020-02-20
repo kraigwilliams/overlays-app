@@ -27,7 +27,7 @@ return (
         </select> */}
        <Link to={`/topics/${this.props.topic.id}`}>View Notes</Link><br/>
        <Link to="/new-note">Add Note to Topic</Link><br/>
-        <button>Share</button>
+        {/* <button>Share</button> */}
       </p>
     </div>
   )

@@ -12,7 +12,7 @@ import TopicsList from '../TopicsList/TopicsList';
 import CreateGroup from '../Groups/CreateGroups'
 import Register from '../Register/Register';
 import NewNote from '../NotesPage/NewNote'
-import NoteListPage from '../NotesPage/NotesListPage';
+//import NoteListPage from '../NotesPage/NotesListPage';
 import AllNotes from '../NotesPage/AllNotes';
 import Logout from '../Logout/Logout'
 

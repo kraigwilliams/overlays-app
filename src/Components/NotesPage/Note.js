@@ -28,8 +28,8 @@ render(){
 
 return(
     <>
-      <h3 >{this.props.note.note_title}</h3>
-<p>{this.props.note.note_contents}</p>
+      <h3 className="note-title">{this.props.note.note_title}</h3>
+<p className="note-contents">{this.props.note.note_contents}</p>
 <p><Link to="/new-note">Add Note</Link></p>
 </>  
   

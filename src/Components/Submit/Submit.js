@@ -1,7 +1,8 @@
-import React, { Component,useState } from "react";
+import React, { Component } from "react";
 import config from '../../config'
 //import topicsApiService from '../../services/topics-api-service';
 import TokenService from '../../services/token-service';
+import './Submit.css'
 
 class Submit extends Component {
 
@@ -37,7 +38,8 @@ class Submit extends Component {
   render() {
     return (
       <>
-        <form onSubmit={this.onSubmit}>
+      <h3>Submit New Topic</h3>
+        <form className="submit-form" onSubmit={this.onSubmit}>
         <input type="text" name="topic_name" placeholder="Submit New Topic" />
           
           <br />
