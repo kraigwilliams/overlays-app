@@ -27,7 +27,7 @@ class AllNotes extends Component{
         })
         .then(res=> res.json())
         .then(data=>{
-             
+            
             this.setState({notes:data})
                       
         }
@@ -44,12 +44,13 @@ return(
 
 
     {this.state.notes.map(note=>{
+    
    return(
     
-   <div className="all-notes">
-        <h2 key={note.topid.id}>{note.topic_name}</h2> 
-   <Link to="#"><h3 key={note.topid.id}>{note.note_title}</h3></Link>
-   <p key={note.topid.id}>{note.note_contents}</p></div>)
+   <div key={note.note_title} className="all-notes">
+        <h2 >{note.topic_name}</h2> 
+   <Link to="#"><h3>{note.note_title}</h3></Link>
+   <p  >{note.note_contents}</p></div>)
    }
         )
 
