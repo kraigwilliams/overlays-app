@@ -40,10 +40,12 @@ class NoteListPage extends Component {
         </select> */}
           <Link to={`/topics/${this.props.topic.id}`}>View Notes</Link>
           <br />
-          <Link to="/new-note">Add Note to Topic</Link>
+          <Link to="/new-note"><i class="fas fa-plus-square"></i> Add Note to Topic 
+
+</Link>
           <br />
 
-          <button onClick={this.handleDelete}>Delete</button>
+          <button className="delete" onClick={this.handleDelete}>Delete</button>
         </p>
       </div>
     );

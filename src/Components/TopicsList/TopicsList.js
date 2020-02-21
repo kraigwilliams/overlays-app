@@ -36,7 +36,9 @@ class TopicsList extends Component {
       <>
         
         
-        <Link to="/submit">Submit New Topic</Link>
+        <Link to="/submit"><i class="fas fa-plus-square"></i>Submit New Topic
+
+ </Link>
               <h2>YOUR TOPICS</h2>
 
         {this.state.topics.map( topic => {

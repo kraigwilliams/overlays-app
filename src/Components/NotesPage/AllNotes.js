@@ -9,11 +9,7 @@ import './notes.css'
 class AllNotes extends Component{
     
     state={
-        notes:[{
-            id:"4",
-            note_title:"stuff",
-            note_contents:"this is really great"
-        }]
+        notes:[]
     }
 
     componentDidMount(){

@@ -13,6 +13,11 @@
 }
 
 a:hover{
-  color:white;
+  color:#F15152;
 }
 
+.App{
+  margin-left:auto;
+  margin-right:auto;
+
+}
