@@ -6,9 +6,7 @@ import config from "../../config";
 import TokenService from "../../services/token-service";
 
 class NoteListPage extends Component {
-  componentDidMount() {
-    console.log("this.props.topic", this.props.topic);
-  }
+
 
   // when delete button is clicked the topic is deleted
   handleDelete = event => {
