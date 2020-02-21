@@ -22,7 +22,7 @@ render(){
   return(
 
 <>
-<p>Are You sure you want to logout?
+<p>Are you sure you want to logout?
   <input type="submit" onClick={()=>this.props.history.push('/')} value="Go Back!"/>
 </p>
 
