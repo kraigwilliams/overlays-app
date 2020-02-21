@@ -17,8 +17,19 @@ a:hover{
 }
 
 .App{
+  height:100vh;
   background: #EDB183;
   margin-left:auto;
   margin-right:auto;
+  margin-bottom:none;
 
+}
+
+body{
+  height:100vh;
+}
+
+html{
+  height:100vh;
+  background: #EDB183;
 }

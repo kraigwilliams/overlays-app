@@ -24,7 +24,7 @@ class App extends Component{
 
 
     return (
-    <div>
+    <>
 
     <Header />
     <main className='App'>
@@ -79,7 +79,7 @@ class App extends Component{
 </Switch>
    
     </main>
-    </div>
+    </>
   )
 }
 }

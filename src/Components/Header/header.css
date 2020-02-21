@@ -1,21 +1,25 @@
 header{
     display:flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     background:#1E555C;
-    margin-bottom:10px;
+    padding-top:20px;
+    
 }
 #header, .header-color{
-    background:#1E555C !important;
+    background:#1E555C ;
  color:white;
     font-family: 'Coda Caption', sans-serif;
 }
 
 #nav{
     background:#1E555C;
- margin-left:40%;
+ margin-left:30%;
+ margin-right:30%;
 align-self: flex-end;
 }
+
+
 
 @media  only screen and(min-width:768px){
 
