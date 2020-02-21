@@ -5,7 +5,7 @@
   text-align: center;
   /* background:lightblue; */
   /* background:lightseagreen; */
-  background: #EDB183; 
+  
   /* background:#F15152; */
 
   color:#3A2E39;
@@ -17,6 +17,7 @@ a:hover{
 }
 
 .App{
+  background: #EDB183;
   margin-left:auto;
   margin-right:auto;
 

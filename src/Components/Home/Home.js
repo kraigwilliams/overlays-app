@@ -8,7 +8,7 @@ function Home(){
 return(
     <div className="home-page">
 <div className="home-left">
-<p>Save Your Opinions</p>
+<p>Save Your Opinions on any page you visit on the web.</p>
 <p>Leave Your View on Everything</p>
 
     <p>Save What's Important to You</p>
@@ -20,7 +20,7 @@ return(
 
 
     <p>
-     <Link to="/register">Create Account</Link> or <Link to="/login">Login</Link>
+    <Link className="options" to="/register">Create Account</Link> or <Link className="options" to="/login">Login</Link>
 
     </p>
     </div>
