@@ -30,7 +30,7 @@ class NoteListPage extends Component {
         <Link to={`/topics/${this.props.topic.id}`}>
           <h2 className="topics-heading">{this.props.topic.topic_name}</h2>
         </Link>
-        <p>
+        <p className="list-contents">
           <a href={this.props.topic.topic_url}>{this.props.topic.topic_url}</a>
           <br />
           {/* <label htmlFor="select-group">Share to Group:</label> */}

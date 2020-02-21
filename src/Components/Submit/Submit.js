@@ -40,21 +40,13 @@ class Submit extends Component {
       <>
       <h3>Submit New Topic</h3>
         <form className="submit-form" onSubmit={this.onSubmit}>
-        <input type="text" name="topic_name" placeholder="Submit New Topic" />
+          <label htmlFor="submit-name">New Topic Name </label>
+        <input id="submit-name" type="text" name="topic_name" placeholder="Submit New Topic" />
           
-          <br />
-          <br />
-          <input type="text" name="topic_url" placeholder="Url to Add" />
-          <br />
-          <br />
-          {/* <label htmlFor="Add to Topic"></label> */}
-         
-          <br />
-          <br />
-          {/* <label htmlFor="select-group">Share to Group</label><br/><br/>
-          <select id="select-group">
-            <option></option>
-          </select> */}
+        
+          <label htmlFor="submit-url">New Topic URL</label>
+          <input id="submit-url" type="text" name="topic_url" placeholder="Url to Add" />
+          
           <input type="submit" value="submit" />
         </form>
       </>
