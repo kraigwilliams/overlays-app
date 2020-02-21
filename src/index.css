@@ -5,14 +5,14 @@
   text-align: center;
   /* background:lightblue; */
   /* background:lightseagreen; */
-  /* background: #EDB183; */
-  background:#F15152;
+  background: #EDB183; 
+  /* background:#F15152; */
 
   color:#3A2E39;
   text-decoration: none;
 }
 
 a:hover{
-  color:#F4D8CD;
+  color:white;
 }
 

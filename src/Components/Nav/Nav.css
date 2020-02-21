@@ -1,0 +1,9 @@
+nav,.nav-color{
+    background:#1E555C;
+    margin-bottom:30px;
+    color:white;
+}
+
+.nav-color:hover{
+color:#F15152;
+}

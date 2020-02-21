@@ -7,7 +7,7 @@ import Nav from '../Nav/Nav'
 function Header(){
 return(
     <header>
-    <Link to= "/"><h1 id="header">Overlays App</h1></Link>
+    <Link className="header-color" to= "/"><h1 id="header">Overlays App</h1></Link>
      <span id ="nav"><Nav /></span> 
     </header>
 )
