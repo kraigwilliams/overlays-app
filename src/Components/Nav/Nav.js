@@ -13,8 +13,8 @@ componentDidMount(){
     render(){
         return(
             <>
-            <Link to="/logout">Logout</Link>
-            <nav><span>Logged in as User Name</span></nav>
+            <Link to="/logout">Login/Logout</Link>
+            {/* <nav><span>Logged in as User Name</span></nav> */}
             </>
             
             
