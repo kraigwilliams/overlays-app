@@ -18,7 +18,7 @@ class NoteListPage extends Component {
         "content-type": "application/json",
         authorization: "bearer " + TokenService.getAuthToken()
       }
-    }).then(() => this.componentDidMount());
+    }).then(()=>this.componentDidMount());
   };
 
   render() {
