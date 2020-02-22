@@ -11,6 +11,8 @@ class NoteListPage extends Component {
   // when delete button is clicked the topic is deleted
   handleDelete = event => {
     event.preventDefault();
+    console.log("button is working",this)
+
     const topicId = this.props.topic.id;
     fetch(`${config.API_ENDPOINT}/topics/${topicId}`, {
       method: "DELETE",
@@ -18,7 +20,10 @@ class NoteListPage extends Component {
         "content-type": "application/json",
         authorization: "bearer " + TokenService.getAuthToken()
       }
-    }).then(()=>this.componentDidMount());
+    })
+    
+    .then(this.props.history.push('/'))
+
   };
 
   render() {
@@ -40,12 +45,12 @@ class NoteListPage extends Component {
         </select> */}
           <Link to={`/topics/${this.props.topic.id}`}>View Notes</Link>
           <br />
-          <Link to="/new-note"><i class="fas fa-plus-square"></i> Add Note to Topic 
+          <Link to="/new-note"><i className="fas fa-plus-square"></i> Add Note to Topic 
 
 </Link>
           <br />
 
-          <button className="delete" onClick={this.handleDelete}>Delete</button>
+          <button className="delete" onClick={(event)=>this.handleDelete(event)}>Delete</button>
         </p>
       </div>
     );

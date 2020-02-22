@@ -36,14 +36,14 @@ class TopicsList extends Component {
       <>
         
         
-        <Link to="/submit"><i class="fas fa-plus-square"></i>Submit New Topic
+        <Link to="/submit"><i className="fas fa-plus-square"></i>Submit New Topic
 
  </Link>
               <h2>YOUR TOPICS</h2>
 
         {this.state.topics.map( topic => {
 
-        return <NoteListPage key={topic.id} topic={topic}/> })}
+        return <NoteListPage key={topic.id} history={this.props.history} topic={topic}/> })}
       
         </> ) 
 

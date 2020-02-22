@@ -1,17 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import './Home.css';
  
 
 
 function Home(){
+
+    useEffect(() => {
+        document.title = "Home- Login or Create Account"
+     }, []);
+
 return(
     <div className="home-page">
 <div className="home-left">
-<p>Save Your Opinions on any page you visit on the web.</p>
-<p>Leave Your View on Everything</p>
+<p><i class="fas fa-bookmark"></i>Save Your Opinions on any page you visit on the web.</p>
+<p><i class="fas fa-bookmark"></i>Leave Your View on Everything</p>
 
-    <p>Save What's Important to You</p>
+    <p><i class="fas fa-bookmark"></i>Save What's Important to You</p>
 </div>
 
 

@@ -27,7 +27,7 @@ class Submit extends Component {
         topic_name: topic_name.value
       })
     })
-      .then(res => res.json())
+      //.then(res => res.json())
       .then( 
         
         this.props.history.push('/topics')
