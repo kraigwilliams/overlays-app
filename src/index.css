@@ -17,6 +17,7 @@ a:hover{
 }
 
 .App{
+  padding:0px;
   height:100vh;
   background: #EDB183;
   margin-left:auto;
@@ -26,10 +27,12 @@ a:hover{
 }
 
 body{
+  padding:0px;
   height:100vh;
 }
 
 html{
+  padding:0px;
   height:100vh;
   background: #EDB183;
 }
