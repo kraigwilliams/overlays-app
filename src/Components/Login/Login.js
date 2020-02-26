@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 //import TokenService from '../../services/token-service';
 
 import AuthApiService from '../../services/auth-api-service'
-import { Button, Input } from '../Utils/Utils'
+
 
 
  class LoginForm extends Component {
@@ -58,26 +58,27 @@ import { Button, Input } from '../Utils/Utils'
           <label htmlFor='LoginForm__user_name'>
             User name
           </label>
-          <Input
+          <input
             required
             name='user_name'
-            id='LoginForm__user_name'>
-          </Input>
+            id='LoginForm__user_name'
+            />
+          
         </div>
         <div className='password'>
           <label htmlFor='LoginForm__password'>
             Password
           </label>
-          <Input
+          <input
             required
             name='password'
             type='password'
-            id='LoginForm__password'>
-          </Input>
+            id='LoginForm__password'
+          />
         </div>
-        <Button type='submit'>
-          Login
-        </Button>
+        <input type='submit'
+          value="Login"
+        />
       </form>
     )
   }

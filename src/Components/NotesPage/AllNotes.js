@@ -30,6 +30,22 @@ class AllNotes extends Component{
             )
 
     }
+
+    deleteNote= event=>{
+        event.preventDefault();
+        
+        
+        fetch(`${config.API_ENDPOINT}/notes/${event.target.value}`,{
+          method:"DELETE",
+          headers: {
+            "content-type": "application/json",
+            authorization: "bearer " + TokenService.getAuthToken()
+          }
+        
+        })
+        .then(this.props.history.push('/'))
+        }
+
 render(){
 //   <Note key={this.state.notes.id} note={this.state.notes} />
   
@@ -44,8 +60,10 @@ return(
    return(
     
    <div key={note.note_title} className="all-notes">
-        <h2 >{note.topic_name}</h2> 
-   <Link to="#"><h3>{note.note_title}</h3></Link>
+        
+   <Link to="#"><h3><button name="delete-btn" value={note.id} onClick={this.deleteNote}><i className="far fa-trash-alt"></i>
+
+</button>{note.note_title}</h3></Link>
    <p  >{note.note_contents}</p></div>)
    }
         )

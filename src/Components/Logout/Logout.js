@@ -17,13 +17,17 @@ class Logout extends Component{
 
 
 render(){
+//const fastyle=`<i class="fas fa-backspace"></i>`;
+
 
    
   return(
-
 <>
+
 <p>Are you sure you want to logout?
-  <input type="submit" onClick={()=>this.props.history.push('/')} value="Go Back!"/>
+  <button type="submit" onClick={()=>this.props.history.push('/')}> <i className="fas fa-backspace"></i>
+ 
+</button>
 </p>
 
 <form onSubmit={this.handleLogout}>

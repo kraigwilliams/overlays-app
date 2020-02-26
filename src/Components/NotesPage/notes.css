@@ -7,6 +7,7 @@
 }
 
 .all-topics {
+  background:#F4D8CD;
   font-family: "Coda Caption", sans-serif;
   border: 5px solid #F4D8CD;
   box-shadow: 4px 5px 7px 5px black;
@@ -31,6 +32,7 @@
   color: #1E555C;
 }
 .note-form {
+  background:#F4D8CD;
    display:flex; 
   flex-direction:column;
     align-content: center;
