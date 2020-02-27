@@ -18,3 +18,12 @@ align-items: center;
     margin:30px;
     width:200px; 
 }
+
+.submit-form label{
+    color:#1E555C;
+}
+
+.submit-topic-btn{
+    background:#F15152;
+}
+  

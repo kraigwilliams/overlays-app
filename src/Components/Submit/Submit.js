@@ -42,16 +42,16 @@ class Submit extends Component {
   render() {
     return (
       <>
-      <h3>Submit New Topic</h3>
+      <h2>Submit New Topic</h2>
         <form className="submit-form" onSubmit={this.onSubmit}>
-          <label htmlFor="submit-name">New Topic Name </label>
+          <h3><label htmlFor="submit-name">New Topic Name </label></h3>
         <input id="submit-name" type="text" name="topic_name" placeholder="Submit New Topic" />
           
         
-          <label htmlFor="submit-url">New Topic URL</label>
+          <h3><label htmlFor="submit-url">New Topic URL</label></h3>
           <input id="submit-url" type="text" name="topic_url" placeholder="Url to Add" />
           
-          <input type="submit" value="submit" />
+          <input className="submit-topic-btn" type="submit" value="submit" />
         </form>
       </>
     );
