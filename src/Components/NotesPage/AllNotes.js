@@ -13,7 +13,7 @@ class AllNotes extends Component{
     }
 
     componentDidMount(){
-        document.title="Topic Notes"
+        document.title="Topic Notes - Overlays"
         const topicId= this.props.match.params.topicId
         
 
