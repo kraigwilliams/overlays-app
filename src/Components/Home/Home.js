@@ -16,7 +16,7 @@ return(
 <p><i class="fas fa-bookmark"></i>Save Your Opinions on any page you visit on the web.</p>
 <p><i class="fas fa-bookmark"></i>Leave Your View on Everything</p>
 
-    <p><i class="fas fa-bookmark"></i>Save What's Important to You</p>
+    <p><i className="fas fa-bookmark"></i>Save What's Important to You</p>
 </div>
 
 

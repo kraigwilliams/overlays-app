@@ -26,7 +26,7 @@ render(){
 
 <p>Are you sure you want to logout?
   <button type="submit" onClick={()=>this.props.history.push('/')}> <i className="fas fa-backspace"></i>
- 
+    <span> NO</span>
 </button>
 </p>
 
