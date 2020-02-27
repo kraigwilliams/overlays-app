@@ -13,6 +13,10 @@ import AuthApiService from '../../services/auth-api-service'
   state = { error: null }
 
 
+  componentDidMount(){
+    document.title="Login - Overlays"
+  }
+
 
 
   handleSubmitJwtAuth = ev => {
@@ -54,6 +58,7 @@ import AuthApiService from '../../services/auth-api-service'
         <div role='alert'>
           {error && <p className='red'>{error}</p>}
         </div>
+
         <div className='user_name'>
           <label htmlFor='LoginForm__user_name'>
             User name

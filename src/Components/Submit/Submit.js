@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import config from '../../config'
 //import topicsApiService from '../../services/topics-api-service';
 import TokenService from '../../services/token-service';
@@ -9,6 +9,10 @@ class Submit extends Component {
   //  state={
   //   topics:[]
   // }
+
+  componentDidMount(){
+    document.title = "Submit New Url Topic - Overlays";
+  }
 
   
   onSubmit = event => {

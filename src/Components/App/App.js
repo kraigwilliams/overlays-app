@@ -9,7 +9,6 @@ import PrivateRoute from '../Utils/PrivateRoute';
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute';
 import Submit from '../Submit/Submit';
 import TopicsList from '../TopicsList/TopicsList';
-import CreateGroup from '../Groups/CreateGroups'
 import Register from '../Register/Register';
 import NewNote from '../NotesPage/NewNote'
 //import NoteListPage from '../NotesPage/NotesListPage';
@@ -61,10 +60,7 @@ class App extends Component{
     path="/register"
     component={Register}
     />
-    <PrivateRoute
-    path="/create-group"
-    component={CreateGroup}
-    />
+  
 
     <PrivateRoute
     path="/new-note"

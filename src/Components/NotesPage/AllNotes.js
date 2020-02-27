@@ -13,8 +13,9 @@ class AllNotes extends Component{
     }
 
     componentDidMount(){
+        document.title="Topic Notes"
         const topicId= this.props.match.params.topicId
-       
+        
 
         fetch(`${config.API_ENDPOINT}/notes/${topicId}`,{
             headers:{

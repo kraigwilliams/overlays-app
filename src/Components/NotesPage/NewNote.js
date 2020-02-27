@@ -9,13 +9,16 @@ class newNote extends Component{
     }
 
     componentDidMount(){
+      document.title ="Enter New Note - Overlays"
          fetch(`${config.API_ENDPOINT}/topics`,{
         headers:{
           authorization:"bearer " + TokenService.getAuthToken()
         }
       })
       .then(res =>res.json()
-      .then(data=>this.setState({topics:data}))
+      .then(data=>{
+        
+        this.setState({topics:data})})
       ) 
 
 

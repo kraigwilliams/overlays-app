@@ -10,6 +10,10 @@ class TopicsList extends Component {
     topics: [],
     groups:[]
   };
+  componentWillMount(){
+    document.title = "Topics Dashboard - Overlays";
+  }
+    
 
   componentDidMount() {
     fetch(`${config.API_ENDPOINT}/topics`,{

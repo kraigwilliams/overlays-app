@@ -9,9 +9,14 @@ export default class RegistrationForm extends Component {
 
   state = { error: null }
 
-  handleSubmit = ev => {
-    ev.preventDefault()
-    const { user_name, user_password } = ev.target
+componentDidMount(){
+  document.title= "Create Account - Overlays"
+}
+
+
+  handleSubmit = event => {
+    event.preventDefault()
+    const { user_name, user_password } = event.target
 
     this.setState({ error: null })
     AuthApiService.postUser({
