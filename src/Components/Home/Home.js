@@ -10,14 +10,14 @@ function Home() {
   return (
     <div className="home-page">
       <div className="home-left">
-        <p>
-          <i className="fas fa-bookmark"></i>Save Your Opinions on any page you
-          visit on the web.
+      <p>
+          <i className="fas fa-bookmark"></i>Save Your Opinions on any Page You
+          Visit on the Web.
         </p>
         <p>
-          <i className="fas fa-bookmark"></i>Leave Your View on Everything
+          <i className="fas fa-bookmark"></i>Save Your Views on Any Everything
         </p>
-
+       
         <p>
           <i className="fas fa-bookmark"></i>Save What's Important to You
         </p>
