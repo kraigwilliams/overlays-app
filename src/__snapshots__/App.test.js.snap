@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> renders the UI as expected 1`] = `
+Array [
+  <header>
+    <a
+      className="header-color"
+      href="/"
+      onClick={[Function]}
+    >
+      <h1
+        id="header"
+      >
+        Overlays App
+      </h1>
+    </a>
+    <span
+      id="nav"
+    >
+      <nav>
+        <a
+          className="nav-color"
+          href="/logout"
+          onClick={[Function]}
+        >
+          Login / Logout
+        </a>
+      </nav>
+    </span>
+  </header>,
+  <main
+    className="App"
+  >
+    <div
+      className="home-page"
+    >
+      <div
+        className="home-left"
+      >
+        <p>
+          <i
+            className="fas fa-bookmark"
+          />
+          Save Your Opinions on any page you visit on the web.
+        </p>
+        <p>
+          <i
+            className="fas fa-bookmark"
+          />
+          Leave Your View on Everything
+        </p>
+        <p>
+          <i
+            className="fas fa-bookmark"
+          />
+          Save What's Important to You
+        </p>
+      </div>
+      <div
+        className="home-right"
+      >
+        <p>
+          <a
+            className="options"
+            href="/register"
+            onClick={[Function]}
+          >
+            Create Account
+          </a>
+           
+          or
+           
+          <a
+            className="options"
+            href="/login"
+            onClick={[Function]}
+          >
+            Login
+          </a>
+        </p>
+      </div>
+    </div>
+  </main>,
+]
+`;

@@ -1,9 +1,23 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+//import { render } from '@testing-library/react';
+import App from './Components/App/App'
+import {BrowserRouter} from 'react-router-dom'
+import ReactDOM from  'react-dom';
+import renderer from 'react-test-renderer';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe('<App/>',()=>{
+  it ('is able to render',()=>{
+    const div = document.createElement('div')
+    ReactDOM.render(<BrowserRouter><App/></BrowserRouter>, div)
+    ReactDOM.unmountComponentAtNode(div)
+  })
+
+  it('renders the UI as expected', () => {
+    const tree = renderer
+      .create(<BrowserRouter><App /></BrowserRouter>)
+      .toJSON();
+    expect(tree).toMatchSnapshot();  
+    });
+
+  
+})

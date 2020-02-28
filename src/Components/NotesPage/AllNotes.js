@@ -53,7 +53,7 @@ render(){
 return(
     <>
 
-    <Link to="/new-note">Add New Note</Link>
+    <p><Link to="/new-note">Add New Note</Link></p>
 
 
     {this.state.notes.map(note=>{

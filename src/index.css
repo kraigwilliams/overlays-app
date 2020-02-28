@@ -1,5 +1,5 @@
 *{
-  
+  box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 
   text-align: center;
@@ -20,9 +20,8 @@ a:hover{
   padding:0px;
   height:100vh;
   background: #EDB183;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom:none;
+  
+    margin-bottom:none;
 
 }
 
@@ -32,7 +31,8 @@ body{
 }
 
 html{
-  padding:0px;
-  height:100vh;
+  padding-top: 0px;
+  border:4px solid black;
+  height:100%;
   background: #EDB183;
 }
