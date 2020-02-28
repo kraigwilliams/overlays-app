@@ -24,15 +24,15 @@ function Home() {
       </div>
 
       <div className="home-right">
-        <p>
+        
           <Link className="options" to="/register">
            <span className="underline" >Create Account</span>
-          </Link>{" "}
-          or{" "}
+          </Link>
+          <span>or</span>
           <Link className="options" to="/login">
             <span className="underline">Login</span>
           </Link>
-        </p>
+        
       </div>
     </div>
   );
