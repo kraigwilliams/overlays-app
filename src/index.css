@@ -17,7 +17,7 @@ a:hover{
 
 .App{
   padding:0px;
-  height:100vh;
+  height:100%;
   background: #EDB183;
   
     margin-bottom:none;
@@ -25,13 +25,16 @@ a:hover{
 }
 
 body{
+  margin:0px;
   padding:0px;
-  height:100vh;
+  height:100%;
+  width:100%;
 }
 
 html{
   padding-top: 0px;
-  border:4px solid black;
+  
   height:100%;
+  widows: 100%;
   background: #EDB183;
 }
