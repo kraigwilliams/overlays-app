@@ -2,7 +2,7 @@ import React, { Component } from "react";
 //import AuthApiService from '../../services/auth-api-service'
 import TokenService from "../../services/token-service";
 
-import {Button, Input} from '../Utils/Utils';
+import {Button} from '../Utils/Utils';
 class Logout extends Component {
   componentWillMount() {
     document.title = "Login / Logout - Overlays";
