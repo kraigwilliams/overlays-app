@@ -3,7 +3,7 @@ import config from '../../config'
 //import topicsApiService from '../../services/topics-api-service';
 import TokenService from '../../services/token-service';
 import './Submit.css'
-
+import {Button,Input}from '../Utils/Utils';
 class Submit extends Component {
 
   //  state={
@@ -45,13 +45,13 @@ class Submit extends Component {
       <h2>Submit New Topic</h2>
         <form className="submit-form" onSubmit={this.onSubmit}>
           <h3><label htmlFor="submit-name">New Topic Name </label></h3>
-        <input id="submit-name" type="text" name="topic_name" placeholder="Submit New Topic" />
+        <Input id="submit-name" type="text" name="topic_name" placeholder="Submit New Topic" />
           
         
           <h3><label htmlFor="submit-url">New Topic URL</label></h3>
-          <input id="submit-url" type="text" name="topic_url" placeholder="Url to Add" />
+          <Input id="submit-url" type="text" name="topic_url" placeholder="Url to Add" />
           
-          <input className="submit-topic-btn" type="submit" value="submit" />
+          <Button className="submit-topic-btn" type="submit"> Submit</Button>
         </form>
       </>
     );

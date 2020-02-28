@@ -2,6 +2,7 @@ import React, { Component } from "react";
 //import AuthApiService from '../../services/auth-api-service'
 import TokenService from "../../services/token-service";
 
+import {Button, Input} from '../Utils/Utils';
 class Logout extends Component {
   componentWillMount() {
     document.title = "Login / Logout - Overlays";
@@ -21,15 +22,15 @@ class Logout extends Component {
       <>
         <p>
           Are you sure you want to logout?
-          <button type="submit" onClick={() => this.props.history.push("/")}>
+          <Button type="submit" onClick={() => this.props.history.push("/")}>
             {" "}
             <i className="fas fa-backspace"></i>
             <span> NO</span>
-          </button>
+          </Button>
         </p>
 
         <form onSubmit={this.handleLogout}>
-          <input type="submit" value="Logout" />
+          <Button type="submit">Logout</Button>
         </form>
       </>
     );

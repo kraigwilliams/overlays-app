@@ -47,17 +47,7 @@ componentDidMount(){
         <div role='alert'>
           {error && <p className='red'>{error}</p>}
         </div>
-        {/* <div className='full_name'>
-          <label htmlFor='RegistrationForm__full_name'>
-            Full name <Required />
-          </label>
-          <Input
-            name='full_name'
-            type='text'
-            required
-            id='RegistrationForm__full_name'>
-          </Input>
-        </div> */}
+       
         <div className='user_name'>
           <label htmlFor='RegistrationForm__user_name'>
            Create User name <Required />
