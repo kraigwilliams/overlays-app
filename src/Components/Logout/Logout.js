@@ -21,7 +21,7 @@ class Logout extends Component {
     return (
       <>
         <p>
-          Are you sure you want to logout?
+          <span>Are you sure you want to logout?</span>
           <Button type="submit" onClick={() => this.props.history.push("/")}>
             {" "}
             <i className="fas fa-backspace"></i>

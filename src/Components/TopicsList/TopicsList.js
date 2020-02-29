@@ -23,7 +23,9 @@ class TopicsList extends Component {
     })
     
       .then(res => res.json())
-      .then(data => this.setState({ topics: data }));
+      .then(data =>{
+        console.log("this is date", data)
+        this.setState({ topics: data })});
 
       // fetch(`${config.API_ENDPOINT}/groups`,{
       //   headers:{
