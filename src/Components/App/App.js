@@ -25,8 +25,9 @@ class App extends Component{
     return (
     <>
 
-    <Header />
+    
     <main className='App'>
+    <Header />
 <Switch>
     <PrivateRoute
     path="/topics/:topicId"
