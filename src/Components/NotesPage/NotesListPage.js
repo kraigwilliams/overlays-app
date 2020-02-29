@@ -4,13 +4,14 @@ import { Link } from "react-router-dom";
 import "./notes.css";
 import config from "../../config";
 import TokenService from "../../services/token-service";
-import {Button} from '../Utils/Utils';
+import { Button } from "../Utils/Utils";
 
 class NoteListPage extends Component {
   // when delete button is clicked the topic is deleted
-  handleDelete = event => {
+
+
+handleDelete = event => {
     event.preventDefault();
-    console.log("button is working", this);
 
     const topicId = this.props.topic.id;
     fetch(`${config.API_ENDPOINT}/topics/${topicId}`, {
@@ -30,7 +31,9 @@ class NoteListPage extends Component {
           <h2 className="topics-heading">{this.props.topic.topic_name}</h2>
         </Link>
         <p className="list-contents">
-          <a className="visit-url" href={this.props.topic.topic_url}>{this.props.topic.topic_url}</a>
+          <a className="visit-url" href={this.props.topic.topic_url}>
+            {this.props.topic.topic_url}
+          </a>
 
           <Link to={`/topics/${this.props.topic.id}`}>View Notes</Link>
 
