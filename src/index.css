@@ -16,15 +16,19 @@ a:hover{
 }
 
 .App{
+  border:2px solid black;
   padding:0px;
-  height:100%;
-  background: #EDB183;
   
-    margin-bottom:none;
+  /* background: #EDB183; */
+  /* background:blue; */
+  
+  
+    margin-bottom:0;
 
 }
 
 body{
+  background:#EDB183;
   margin:0px;
   padding:0px;
   height:100%;
@@ -35,6 +39,6 @@ html{
   padding-top: 0px;
   
   height:100%;
-  widows: 100%;
-  background: #EDB183;
+  width: 100%;
+  
 }
