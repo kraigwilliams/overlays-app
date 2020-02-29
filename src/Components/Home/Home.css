@@ -1,5 +1,5 @@
 .home-page {
-  border:2px solid red;
+  
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -9,7 +9,7 @@ justify-content: baseline;
   align-items: flex-start;
 padding-top: 0px;
   height: 80%;
-  color:red;
+  
 }
 
 .home-left {
