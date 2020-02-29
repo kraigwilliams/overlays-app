@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./notes.css";
 import config from "../../config";
 import TokenService from "../../services/token-service";
+import {Button} from '../Utils/Utils';
 
 class NoteListPage extends Component {
   // when delete button is clicked the topic is deleted
@@ -37,12 +38,12 @@ class NoteListPage extends Component {
             <i className="fas fa-plus-square"></i> Add Note to Topic
           </Link>
 
-          <button
+          <Button
             className="delete"
             onClick={event => this.handleDelete(event)}
           >
             Delete
-          </button>
+          </Button>
         </p>
       </div>
     );
