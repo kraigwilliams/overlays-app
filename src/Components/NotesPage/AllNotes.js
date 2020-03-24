@@ -28,7 +28,7 @@ class AllNotes extends Component {
       .then(data => {
         console.log("all data", data);
         this.setState({ notes: data });
-        this.setState({ heading: data[0].topic_name });
+        this.setState({ heading: this.props.match.params.topicName});
       });
   };
   deleteNote = event => {
