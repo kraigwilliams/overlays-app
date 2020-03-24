@@ -30,7 +30,8 @@ class App extends Component{
     <Header />
 <Switch>
     <PrivateRoute
-    path="/topics/:topicId"
+    // path="/topics/:topicId"
+    path="/topics/:topicName"
     component={AllNotes}
     /> 
 

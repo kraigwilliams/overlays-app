@@ -22,7 +22,8 @@ class newNote extends Component {
   }
   onSubmit = event => {
     event.preventDefault();
-    const { note_title, note_contents, from_topic } = event.target;
+    const { note_title, note_contents, from_topic} = event.target;
+    //console.log("latest", event.target)
     console.log("trying to get article id", from_topic.value);
     fetch(`${config.API_ENDPOINT}/notes`, {
       method: "POST",
@@ -33,14 +34,16 @@ class newNote extends Component {
       body: JSON.stringify({
         note_title: note_title.value,
         note_contents: note_contents.value,
-        from_topic: from_topic.value
+        topic_name: from_topic.value,
+        
       })
     })
       .then(res => res.json())
       .then(
-        // this.componentDidMount()
-        this.props.history.push("/topics")
-        //console.log(data);
+        
+         this.props.history.push("/topics")
+        
+        
       );
   };
 
@@ -73,13 +76,13 @@ class newNote extends Component {
           <select name="from_topic">
             {this.state.topics.map(topic => {
               return (
-                <option name={topic.id} value={topic.id} key={topic.id}>
+                <option name={topic.id} value={topic.topic_name} key={topic.id}>
                   {topic.topic_name}
                 </option>
               );
             })}
           </select>
-          <Button type="submit">Submit</Button>
+          <Button className="submit-topic-btn" type="submit">Submit</Button>
         </form>
       </>
     );

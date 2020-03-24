@@ -8,7 +8,7 @@ import NoteListPage from '../NotesPage/NotesListPage';
 class TopicsList extends Component {
   state = {
     topics: [],
-    groups:[]
+    
   };
   componentWillMount(){
     document.title = "Topics Dashboard - Overlays";
@@ -24,7 +24,7 @@ class TopicsList extends Component {
     
       .then(res => res.json())
       .then(data =>{
-        console.log("this is date", data)
+        console.log("this is data", data)
         this.setState({ topics: data })});
 
       // fetch(`${config.API_ENDPOINT}/groups`,{

@@ -14,6 +14,7 @@ handleDelete = event => {
     event.preventDefault();
 
     const topicId = this.props.topic.id;
+    
     fetch(`${config.API_ENDPOINT}/topics/${topicId}`, {
       method: "DELETE",
       headers: {
@@ -27,7 +28,7 @@ handleDelete = event => {
     //const topicId= this.props.match.params.TopicId
     return (
       <div className="all-topics">
-        <Link to={`/topics/${this.props.topic.id}`}>
+        <Link to={`/topics/${this.props.topic.topic_name}`}>
           <h2 className="topics-heading">{this.props.topic.topic_name}</h2>
         </Link>
         <p className="list-contents">
@@ -35,7 +36,7 @@ handleDelete = event => {
             {this.props.topic.topic_url}
           </a>
 
-          <Link to={`/topics/${this.props.topic.id}`}>View Notes</Link>
+          <Link to={`/topics/${this.props.topic.topic_name}`}>View Notes</Link>
 
           <Link to="/new-note">
             <i className="fas fa-plus-square"></i> Add Note to Topic

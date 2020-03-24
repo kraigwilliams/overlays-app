@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import TokenService from "../../services/token-service";
 
 import {Button} from '../Utils/Utils';
+import './Logout.css'
 class Logout extends Component {
   componentWillMount() {
     document.title = "Login / Logout - Overlays";
@@ -21,8 +22,8 @@ class Logout extends Component {
     return (
       <>
         <p>
-          <span>Are you sure you want to logout?</span>
-          <Button type="submit" onClick={() => this.props.history.push("/")}>
+          <span >Are you sure you want to logout?</span>
+          <Button className="logout-cancel" type="submit" onClick={() => this.props.history.push("/")}>
             {" "}
             <i className="fas fa-backspace"></i>
             <span> NO</span>

@@ -7,34 +7,40 @@ import "./notes.css";
 
 class AllNotes extends Component {
   state = {
-    notes: []
+    notes: [],
+    heading:null
   };
 
   componentDidMount() {
     document.title = "Topic Notes - Overlays";
-    const topicId = this.props.match.params.topicId;
-
-    fetch(`${config.API_ENDPOINT}/notes/bytopic/${topicId}`, {
+    this.getNotes();
+  }
+  getNotes = () => {
+    const topicName = this.props.match.params.topicName;
+    //const topicId = this.props.match.params.topicId;
+    console.log("newest", this.props.match.params.topicName)
+    fetch(`${config.API_ENDPOINT}/notes/bytopic/${topicName}`, {
       headers: {
         authorization: "bearer " + TokenService.getAuthToken()
       }
     })
       .then(res => res.json())
       .then(data => {
+        console.log("all data", data);
         this.setState({ notes: data });
+        this.setState({ heading: data[0].topic_name });
       });
-  }
-
+  };
   deleteNote = event => {
     event.preventDefault();
-console.log(event.currentTarget)
+    console.log(event.currentTarget);
     fetch(`${config.API_ENDPOINT}/notes/${event.currentTarget.value}`, {
       method: "DELETE",
       headers: {
         "content-type": "application/json",
         authorization: "bearer " + TokenService.getAuthToken()
       }
-    }).then(this.props.history.push("/"));
+    }).then(this.getNotes);
   };
 
   render() {
@@ -42,6 +48,8 @@ console.log(event.currentTarget)
 
     return (
       <>
+      
+          <h2>{this.state.heading}</h2>  
         <p>
           <Link to="/new-note">Add New Note</Link>
         </p>
@@ -49,6 +57,7 @@ console.log(event.currentTarget)
         {this.state.notes.map(note => {
           return (
             <div key={note.note_title} className="all-notes">
+              
               <Link to="#">
                 <h3>
                   <button
