@@ -24,7 +24,7 @@ class newNote extends Component {
     event.preventDefault();
     const { note_title, note_contents, from_topic} = event.target;
     //console.log("latest", event.target)
-    console.log("trying to get article id", from_topic.value);
+    console.log("trying to get topic id", from_topic.value);
     fetch(`${config.API_ENDPOINT}/notes`, {
       method: "POST",
       headers: {
@@ -34,7 +34,7 @@ class newNote extends Component {
       body: JSON.stringify({
         note_title: note_title.value,
         note_contents: note_contents.value,
-        topic_name: from_topic.value,
+        from_topic: from_topic.value
       
         
       })
@@ -81,7 +81,7 @@ class newNote extends Component {
           <Select name="from_topic" className="note-select">
             {this.state.topics.map(topic => {
               return (
-                <option name={topic.id} value={topic.topic_name} key={topic.id}>
+                <option name={topic.id} value={topic.id} key={topic.id}>
                   {topic.topic_name}
                 </option>
               );

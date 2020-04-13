@@ -5,6 +5,10 @@ import TokenService from "../../Services/token-service";
 import {Button} from '../Utils/Utils';
 import './Logout.css'
 class Logout extends Component {
+
+state ={
+loggedIn:false
+}
   componentWillMount() {
     document.title = "Login / Logout - Overlays";
   }
@@ -12,12 +16,13 @@ class Logout extends Component {
   handleLogout = event => {
     event.preventDefault();
     TokenService.clearAuthToken();
-
+    console.log("this",this)
     this.props.history.push("/");
+   
   };
 
   render() {
-    //const fastyle=`<i class="fas fa-backspace"></i>`;
+    
 
     return (
       <>

@@ -20,13 +20,7 @@ class TopicsList extends Component {
       console.log("this is data", data)
       this.setState({ topics: data })});
 
-    // fetch(`${config.API_ENDPOINT}/topics`, {
-    //   headers:{
-    //     authorization:"bearer " + TokenService.getAuthToken()
-    //   }
-    // })
     
-    //   .then(res => res.json())
        
   }
 

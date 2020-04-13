@@ -14,31 +14,21 @@ class AllNotes extends Component {
   };
 
   componentDidMount() {
-    document.title = "Topic Notes - Overlays";
     const topicName = this.props.match.params.topicName
+    document.title = `${topicName} notes - Overlays`
+    
   NotesApiService.getNotes(topicName)
   .then(data=>this.setState({ notes: data, heading: topicName}))}
   
-  // getNotes = () => {
-  //   const topicName = this.props.match.params.topicName;
-  //   //const topicId = this.props.match.params.topicId;
-  //   console.log("newest", this.props.match.params.topicName)
-  //   fetch(`${config.API_ENDPOINT}/notes/bytopic/${topicName}`, {
-  //     headers: {
-  //       authorization: "bearer " + TokenService.getAuthToken()
-  //     }
-  //   })
-  //     .then(res => res.json())
-   
-
+  
  async handleDeleteNote(event){
-  console.log("WOWWW")
+  
    await NotesApiService.deleteNote(event)
     await NotesApiService.getNotes();
   };
 
   render() {
-    //   <Note key={this.state.notes.id} note={this.state.notes} />
+    
 
     return (
       <>
@@ -56,6 +46,7 @@ class AllNotes extends Component {
                 <h3>
                   <button
                     name="delete-btn"
+                    className="delete-btn"
                     value={note.id}
                     onClick={this.handleDeleteNote}
                   >
