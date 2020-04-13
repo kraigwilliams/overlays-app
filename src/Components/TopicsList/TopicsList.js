@@ -1,7 +1,8 @@
 import React, { Component} from "react";
 import { Link } from "react-router-dom";
-import config from '../../config'
-import TokenService from '../../services/token-service'
+//import config from '../../config'
+//import TokenService from '../../Services/token-service'
+import TopicsApiService from '../../Services/topics-api-service'
 import NoteListPage from '../NotesPage/NotesListPage';
 //import Nav from '../Nav/Nav'
 
@@ -10,35 +11,29 @@ class TopicsList extends Component {
     topics: [],
     
   };
-  componentWillMount(){
-    document.title = "Topics Dashboard - Overlays";
-  }
+  
     
 
-  componentDidMount() {
-    fetch(`${config.API_ENDPOINT}/topics`,{
-      headers:{
-        authorization:"bearer " + TokenService.getAuthToken()
-      }
-    })
-    
-      .then(res => res.json())
-      .then(data =>{
-        console.log("this is data", data)
-        this.setState({ topics: data })});
+   componentDidMount() {
+     TopicsApiService.getTopics()
+     .then(data =>{
+      console.log("this is data", data)
+      this.setState({ topics: data })});
 
-      // fetch(`${config.API_ENDPOINT}/groups`,{
-      //   headers:{
-      //     authorization:"bearer " + TokenService.getAuthToken()
-      //   }
-      // })
-      // .then(res =>res.json()
-      // .then(data=>this.setState({groups:data}))
-      // )
+    // fetch(`${config.API_ENDPOINT}/topics`, {
+    //   headers:{
+    //     authorization:"bearer " + TokenService.getAuthToken()
+    //   }
+    // })
+    
+    //   .then(res => res.json())
+       
   }
 
   render() {
+    document.title = "Topics Dashboard - Overlays";
     return (
+      
       <>
         
         

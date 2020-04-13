@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import config from "../../config";
-import TokenService from "../../services/token-service";
-import { Input, Textarea, Button } from "../Utils/Utils";
+import TokenService from "../../Services/token-service";
+import { Input, Textarea, Button,Select} from "../Utils/Utils";
 
 class newNote extends Component {
   state = {
@@ -9,7 +9,7 @@ class newNote extends Component {
   };
 
   componentDidMount() {
-    document.title = "Enter New Note - Overlays";
+    document.title = "Add New Note - Overlays";
     fetch(`${config.API_ENDPOINT}/topics`, {
       headers: {
         authorization: "bearer " + TokenService.getAuthToken()
@@ -35,6 +35,7 @@ class newNote extends Component {
         note_title: note_title.value,
         note_contents: note_contents.value,
         topic_name: from_topic.value,
+      
         
       })
     })
@@ -55,12 +56,15 @@ class newNote extends Component {
           <label id="note-label" htmlFor="note_title">
             Enter Note Title
           </label>
+         
           <Input
+          required
             type="text"
             id="note_title"
             name="note_title"
             placeholder="Note Title"
           />
+        
           <br />
           <br />
           <label id="note-label" htmlFor="note_contents">
@@ -73,7 +77,8 @@ class newNote extends Component {
           ></Textarea>
           <br />
           <br />
-          <select name="from_topic">
+          
+          <Select name="from_topic" className="note-select">
             {this.state.topics.map(topic => {
               return (
                 <option name={topic.id} value={topic.topic_name} key={topic.id}>
@@ -81,7 +86,7 @@ class newNote extends Component {
                 </option>
               );
             })}
-          </select>
+          </Select>
           <Button className="submit-topic-btn" type="submit">Submit</Button>
         </form>
       </>

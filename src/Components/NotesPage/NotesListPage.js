@@ -3,12 +3,12 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./notes.css";
 import config from "../../config";
-import TokenService from "../../services/token-service";
+import TokenService from "../../Services/token-service";
 import { Button } from "../Utils/Utils";
 
 class NoteListPage extends Component {
+  
   // when delete button is clicked the topic is deleted
-
 
 handleDelete = event => {
     event.preventDefault();

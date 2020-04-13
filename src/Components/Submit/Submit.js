@@ -1,7 +1,7 @@
 import React, { Component} from "react";
 import config from '../../config'
 //import topicsApiService from '../../services/topics-api-service';
-import TokenService from '../../services/token-service';
+import TokenService from '../../Services/token-service';
 import './Submit.css'
 import {Button,Input}from '../Utils/Utils';
 class Submit extends Component {

@@ -1,10 +1,14 @@
-.Hyph {
-    margin-right: 5px;
-    margin-left: 5px;
-  }
+
   
+  .Textarea{
+    color:blue;
+    line-height: 200px;
+    height:40%;
+    
+  }
+
   .Input,
-  .Textarea {
+  .Select {
     height:30%;
     border: 1px solid #ddd;
     display: block;
