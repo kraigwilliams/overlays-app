@@ -15,7 +15,7 @@ handleDelete = event => {
     event.preventDefault();
 
     const topicId = this.props.topic.id;
-    
+    console.log(topicId, "topicId")
     fetch(`${config.API_ENDPOINT}/topics/${topicId}`, {
       method: "DELETE",
       headers: {
