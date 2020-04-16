@@ -18,4 +18,6 @@ which is available ate
 Overlays App is a way for someone to make notes of any webpage that they visit. They can leave their views 
 whether they are researching for studies or for personal interests, or for leisure. 
 
+## Demo
 
+You can demo using the username - kwill and password 1@Thinkful
