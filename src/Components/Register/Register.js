@@ -22,12 +22,10 @@ componentDidMount(){
     AuthApiService.postUser({
       user_name: user_name.value,
       user_password: user_password.value,
-      //full_name: full_name.value,
-      //nickname: nick_name.value,
+     
     })
       .then(user => {
-       // full_name.value = ''
-        //nick_name.value = ''
+      
         user_name.value = ''
         user_password.value = ''
         this.props.onRegistrationSuccess()

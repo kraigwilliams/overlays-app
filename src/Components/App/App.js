@@ -15,6 +15,8 @@ import NewNote from '../NotesPage/NewNote'
 import AllNotes from '../NotesPage/AllNotes';
 import Logout from '../Logout/Logout'
 
+
+
 class App extends Component{
 
 
@@ -31,7 +33,7 @@ class App extends Component{
 <Switch>
     <PrivateRoute
     // path="/topics/:topicId"
-    path="/topics/:topicName"
+    path= '/topics/:topicName'
     component={AllNotes}
     /> 
 

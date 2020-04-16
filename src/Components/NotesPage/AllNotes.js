@@ -14,7 +14,7 @@ class AllNotes extends Component {
   };
 
   componentDidMount() {
-    const topicName = this.props.match.params.topicName
+    const topicName = this.props.match.params.topicName.replace("-"," ")
     document.title = `${topicName} notes - Overlays`
     
   NotesApiService.getNotes(topicName)

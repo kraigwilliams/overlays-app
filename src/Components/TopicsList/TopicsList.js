@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 //import TokenService from '../../Services/token-service'
 import TopicsApiService from '../../Services/topics-api-service'
 import NoteListPage from '../NotesPage/NotesListPage';
+import slugify from 'slugify';
 //import Nav from '../Nav/Nav'
 
 class TopicsList extends Component {
@@ -17,7 +18,7 @@ class TopicsList extends Component {
    componentDidMount() {
      TopicsApiService.getTopics()
      .then(data =>{
-      console.log("this is data", data)
+      data.map(each=>each.slug=slugify(`${each.topic_name}`))
       this.setState({ topics: data })});
 
     
