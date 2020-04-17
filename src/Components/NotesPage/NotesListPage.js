@@ -38,7 +38,7 @@ handleDelete = event => {
           <a className="visit-url" href={this.props.topic.topic_url}>
             {this.props.topic.topic_url}
           </a>
-"
+
           <Link to={`/topics/${this.props.topic.topic_name}`} >View Notes</Link>
 
           <Link to="/new-note">
