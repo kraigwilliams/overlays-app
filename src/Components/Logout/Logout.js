@@ -16,7 +16,7 @@ loggedIn:false
   handleLogout = event => {
     event.preventDefault();
     TokenService.clearAuthToken();
-    console.log("this",this)
+  
     this.props.history.push("/");
    
   };
