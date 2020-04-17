@@ -1,6 +1,6 @@
 import React from 'react';
 //import { render } from '@testing-library/react';
-import App from './Components/App/App'
+import App from './App'
 import {BrowserRouter} from 'react-router-dom'
 import ReactDOM from  'react-dom';
 import renderer from 'react-test-renderer';
