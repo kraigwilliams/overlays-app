@@ -3,7 +3,7 @@ import config from '../config'
 
 const TopicsApiService = {
   getTopics (){
-    console.log("service is working")
+    
     return fetch(`${config.API_ENDPOINT}/topics`, {
       headers:{
         authorization:"bearer " + TokenService.getAuthToken()
