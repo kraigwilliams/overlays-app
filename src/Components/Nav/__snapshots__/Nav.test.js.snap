@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav/> renders the UI as expected 1`] = `
+<nav>
+  <a
+    className="nav-color"
+    href="/logout"
+    onClick={[Function]}
+  >
+    Login / Logout
+  </a>
+</nav>
+`;

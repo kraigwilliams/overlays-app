@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Logout/> renders the UI as expected 1`] = `
+Array [
+  <p>
+    <span>
+      Are you sure you want to logout?
+    </span>
+    <button
+      className="Button logout-cancel"
+      onClick={[Function]}
+      type="submit"
+    >
+       
+      <i
+        className="fas fa-backspace"
+      />
+      <span>
+         NO
+      </span>
+    </button>
+  </p>,
+  <form
+    onSubmit={[Function]}
+  >
+    <button
+      className="Button "
+      type="submit"
+    >
+      Logout
+    </button>
+  </form>,
+]
+`;
