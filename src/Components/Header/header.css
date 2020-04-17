@@ -15,8 +15,10 @@ header {
   background: #1e555c;
   /* padding-top: 20px; */
 }
-#header,
-.header-color {
+#header
+ {
+   margin-left: left 10px;
+   margin-right: left 10px;
   background: #1e555c;
   color: white;
   font-family: "Coda Caption", sans-serif;

@@ -10,7 +10,7 @@ Header Component for the entire App
 function Header(){
 return(
     <header>
-    <Link className="header-color" to= "/"><h1 id="header">Overlays App</h1></Link>
+    <Link to= "/"><h1 id="header">Overlays App</h1></Link>
      <span id ="nav"><Nav /></span> 
     </header>
 )
