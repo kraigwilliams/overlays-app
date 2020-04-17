@@ -4,6 +4,11 @@ import config from '../../config'
 import TokenService from '../../Services/token-service';
 import './Submit.css'
 import {Button,Input}from '../Utils/Utils';
+
+
+/*
+Submit renders a form for a user to submit a new topic.S
+*/
 class Submit extends Component {
 
   //  state={

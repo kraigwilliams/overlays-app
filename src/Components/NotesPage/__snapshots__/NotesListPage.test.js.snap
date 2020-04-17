@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> renders the UI as expected 1`] = `
+<div
+  className="all-topics"
+>
+  <a
+    href="/topics/undefined"
+    onClick={[Function]}
+  >
+    <h2
+      className="topics-heading"
+    >
+       
+    </h2>
+  </a>
+  <p
+    className="list-contents"
+  >
+    <a
+      className="visit-url"
+    />
+    <a
+      href="/topics/undefined"
+      onClick={[Function]}
+    >
+      View Notes
+    </a>
+    <a
+      href="/new-note"
+      onClick={[Function]}
+    >
+      <i
+        className="fas fa-plus-square"
+      />
+       Add Note to Topic
+    </a>
+    <button
+      className="Button delete"
+      onClick={[Function]}
+    >
+      Delete
+    </button>
+  </p>
+</div>
+`;

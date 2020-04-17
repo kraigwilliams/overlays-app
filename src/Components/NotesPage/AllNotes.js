@@ -6,15 +6,22 @@ import NotesApiService from '../../Services/notes-api.service'
 import { Link } from "react-router-dom";
 import "./notes.css";
 
-
+/*
+AllNotes is passed into a map function and is used to show all of the notes within a topic
+*/
 class AllNotes extends Component {
+//  static defaultProps = {
+//      match: {params:{topicName:{}}}
+//    }
+
+
   state = {
     notes: [],
     heading:null
   };
 
   componentDidMount() {
-    const topicName = this.props.match.params.topicName.replace("-"," ")
+    const topicName = this.props.match.params.topicName.replace("-"," ") || {}
     document.title = `${topicName} notes - Overlays`
     
   NotesApiService.getNotes(topicName)

@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { Button, Input, Required } from '../Utils/Utils'
 import AuthApiService from '../../Services/auth-api-service'
 
+/*
+RegistrationForm renders a form for a new user to register.
+*/
 export default class RegistrationForm extends Component {
   static defaultProps = {
     onRegistrationSuccess: () => {}

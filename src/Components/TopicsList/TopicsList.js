@@ -7,6 +7,9 @@ import NoteListPage from '../NotesPage/NotesListPage';
 import slugify from 'slugify';
 //import Nav from '../Nav/Nav'
 
+/*
+TopicsList maps over NotesListPage component showing all of a users topics
+*/
 class TopicsList extends Component {
   state = {
     topics: [],

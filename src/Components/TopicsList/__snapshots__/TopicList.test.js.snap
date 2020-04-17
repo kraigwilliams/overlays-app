@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<App/> renders the UI as expected 1`] = `
+exports[`<TopicList/> renders the UI as expected 1`] = `
 Array [
   <a
     href="/submit"

@@ -1,9 +1,15 @@
 import config from '../config'
 import TokenService from './token-service'
 import IdleService from './idle-service'
-//import {Redirect } from 'react-router-dom';
+
 
 const AuthApiService = {
+
+
+  /**
+   * Fetches the backend endpoint for posting new users to database 
+   * @param {object} user 
+   */
   postUser(user) {
     return fetch(`${config.API_ENDPOINT}/auth/users`, {
       method: 'POST',
@@ -18,6 +24,11 @@ const AuthApiService = {
           : res.json()
       )
   },
+  /**
+   * Handles posting the username and password of a user logging back into the app to the backend to authenticate them.
+   * @param {text} user_name
+   * @param {password} password 
+   */
   postLogin({ user_name, password }) {
     return fetch(`${config.API_ENDPOINT}/auth/login`, {
       method: 'POST',
@@ -74,7 +85,7 @@ const AuthApiService = {
         return res
       })
       .catch(err => {
-        console.log('refresh token request error')
+       
         console.error(err)
       })
   },

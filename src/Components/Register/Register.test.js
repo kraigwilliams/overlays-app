@@ -1,20 +1,20 @@
 import React from 'react';
 //import { render } from '@testing-library/react';
-import TopicList from './TopicsList'
+import Register from './Register'
 import {BrowserRouter} from 'react-router-dom'
 import ReactDOM from  'react-dom';
 import renderer from 'react-test-renderer';
 
-describe('<TopicList/>',()=>{
+describe('<Register/>',()=>{
   it ('is able to render',()=>{
     const div = document.createElement('div')
-    ReactDOM.render(<BrowserRouter><TopicList/></BrowserRouter>, div)
+    ReactDOM.render(<BrowserRouter><Register/></BrowserRouter>, div)
     ReactDOM.unmountComponentAtNode(div)
   })
 
   it('renders the UI as expected', () => {
     const tree = renderer
-      .create(<BrowserRouter><TopicList/></BrowserRouter>)
+      .create(<BrowserRouter><Register/></BrowserRouter>)
       .toJSON();
     expect(tree).toMatchSnapshot();  
     });

@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
-//import TokenService from '../../services/token-service';
+
 
 import AuthApiService from '../../Services/auth-api-service'
 import {Button, Input} from '../Utils/Utils';
 
-
+/*
+LoginForm is the Component which holds the JSX for loggging in to the app.
+*/ 
  class LoginForm extends Component {
   static defaultProps = {
     onLoginSuccess: () => {}

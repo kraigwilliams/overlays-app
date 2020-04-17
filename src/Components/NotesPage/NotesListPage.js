@@ -7,9 +7,19 @@ import TokenService from "../../Services/token-service";
 import { Button } from "../Utils/Utils";
 
 
+/*
+NotesListPage is placed into a map function and is used to diplay a list of all a user's topics
+*/ 
 class NoteListPage extends Component {
+  static defaultProps = {
+    topic: {}
+  }
   
-  // when delete button is clicked the topic is deleted
+  /**
+   * 
+   * @param {}
+   */
+
 
 handleDelete = event => {
     event.preventDefault();
@@ -55,5 +65,6 @@ handleDelete = event => {
     );
   }
 }
+
 
 export default NoteListPage;

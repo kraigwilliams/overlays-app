@@ -4,7 +4,9 @@ import './header.css'
 
 import Nav from '../Nav/Nav'
 
-
+/*
+Header Component for the entire App
+*/ 
 function Header(){
 return(
     <header>

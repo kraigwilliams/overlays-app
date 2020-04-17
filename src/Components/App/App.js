@@ -11,12 +11,12 @@ import Submit from '../Submit/Submit';
 import TopicsList from '../TopicsList/TopicsList';
 import Register from '../Register/Register';
 import NewNote from '../NotesPage/NewNote'
-//import NoteListPage from '../NotesPage/NotesListPage';
+
 import AllNotes from '../NotesPage/AllNotes';
 import Logout from '../Logout/Logout'
 
 
-
+//home component that wraps other components
 class App extends Component{
 
 

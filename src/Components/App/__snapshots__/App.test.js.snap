@@ -34,55 +34,70 @@ exports[`<App/> renders the UI as expected 1`] = `
     className="home-page"
   >
     <div
-      className="home-left"
+      className="home-page-top"
     >
-      <p>
-        <i
-          className="fas fa-bookmark"
-        />
-        Save Your Opinions on any Page You Visit on the Web.
-      </p>
-      <p>
-        <i
-          className="fas fa-bookmark"
-        />
-        Save Your Views on Any Everything
-      </p>
-      <p>
-        <i
-          className="fas fa-bookmark"
-        />
-        Save What's Important to You
-      </p>
+      <div
+        className="home-left"
+      >
+        <p>
+          <i
+            className="fas fa-bookmark"
+          />
+          Save Your Opinions on any Page You Visit on the Web.
+        </p>
+        <p>
+          <i
+            className="fas fa-bookmark"
+          />
+          Save Your Views on Any Everything
+        </p>
+        <p>
+          <i
+            className="fas fa-bookmark"
+          />
+          Save What's Important to You
+        </p>
+      </div>
+      <div
+        className="home-right"
+      >
+        <a
+          className="options"
+          href="/register"
+          onClick={[Function]}
+        >
+          <span
+            className="underline"
+          >
+            Create Account
+          </span>
+        </a>
+        <span>
+          or
+        </span>
+        <a
+          className="options"
+          href="/login"
+          onClick={[Function]}
+        >
+          <span
+            className="underline"
+          >
+            Login
+          </span>
+        </a>
+      </div>
     </div>
     <div
-      className="home-right"
+      className="home-bottom"
     >
-      <a
-        className="options"
-        href="/register"
-        onClick={[Function]}
-      >
-        <span
-          className="underline"
-        >
-          Create Account
-        </span>
-      </a>
-      <span>
-        or
-      </span>
-      <a
-        className="options"
-        href="/login"
-        onClick={[Function]}
-      >
-        <span
-          className="underline"
-        >
-          Login
-        </span>
-      </a>
+      <p>
+        To demo Overlays you may login with:
+        <br />
+        username:kwill
+        <br />
+        password:1@Thinkful
+      </p>
     </div>
   </div>
 </main>

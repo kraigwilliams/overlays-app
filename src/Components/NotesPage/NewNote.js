@@ -3,6 +3,9 @@ import config from "../../config";
 import TokenService from "../../Services/token-service";
 import { Input, Textarea, Button,Select} from "../Utils/Utils";
 
+/*
+New Note renders a form for users to submit a new note to add to a topic
+*/ 
 class newNote extends Component {
   state = {
     topics: []

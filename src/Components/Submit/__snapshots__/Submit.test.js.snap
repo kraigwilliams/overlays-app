@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Submit/> renders the UI as expected 1`] = `
+Array [
+  <h2>
+    Submit New Topic
+  </h2>,
+  <form
+    className="submit-form"
+    onSubmit={[Function]}
+  >
+    <h3>
+      <label
+        htmlFor="submit-name"
+      >
+        New Topic Name 
+      </label>
+    </h3>
+    <input
+      className="Input "
+      id="submit-name"
+      name="topic_name"
+      placeholder="Submit New Topic"
+      type="text"
+    />
+    <h3>
+      <label
+        htmlFor="submit-url"
+      >
+        New Topic URL
+      </label>
+    </h3>
+    <input
+      className="Input "
+      id="submit-url"
+      name="topic_url"
+      placeholder="Url to Add"
+      type="text"
+    />
+    <button
+      className="Button submit-topic-btn"
+      type="submit"
+    >
+       Submit
+    </button>
+  </form>,
+]
+`;

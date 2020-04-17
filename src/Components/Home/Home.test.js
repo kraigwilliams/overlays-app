@@ -5,7 +5,7 @@ import {BrowserRouter} from 'react-router-dom'
 import ReactDOM from  'react-dom';
 import renderer from 'react-test-renderer';
 
-describe('<App/>',()=>{
+describe('<Header/>',()=>{
   it ('is able to render',()=>{
     const div = document.createElement('div')
     ReactDOM.render(<BrowserRouter><Home/></BrowserRouter>, div)

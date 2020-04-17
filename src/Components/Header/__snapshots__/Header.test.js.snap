@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header /> renders the UI as expected 1`] = `
+<header>
+  <a
+    className="header-color"
+    href="/"
+    onClick={[Function]}
+  >
+    <h1
+      id="header"
+    >
+      Overlays App
+    </h1>
+  </a>
+  <span
+    id="nav"
+  >
+    <nav>
+      <a
+        className="nav-color"
+        href="/logout"
+        onClick={[Function]}
+      >
+        Login / Logout
+      </a>
+    </nav>
+  </span>
+</header>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AllNotes/> renders the UI as expected 1`] = `
+Array [
+  <h2 />,
+  <p>
+    <a
+      href="/new-note"
+      onClick={[Function]}
+    >
+      Add New Note
+    </a>
+  </p>,
+]
+`;

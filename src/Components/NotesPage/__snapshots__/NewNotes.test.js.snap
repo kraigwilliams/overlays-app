@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewNote/> renders the UI as expected 1`] = `
+Array [
+  <h3>
+    Make a new Note
+  </h3>,
+  <form
+    className="note-form"
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="note_title"
+      id="note-label"
+    >
+      Enter Note Title
+    </label>
+    <input
+      className="Input "
+      id="note_title"
+      name="note_title"
+      placeholder="Note Title"
+      required={true}
+      type="text"
+    />
+    <br />
+    <br />
+    <label
+      htmlFor="note_contents"
+      id="note-label"
+    >
+      Enter Note Content
+    </label>
+    <textarea
+      className="Textarea "
+      id="note_contents"
+      name="note_contents"
+      placeholder="Enter Note Text"
+    />
+    <br />
+    <br />
+    <select
+      className="Select note-select"
+      name="from_topic"
+    />
+    <button
+      className="Button submit-topic-btn"
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>,
+]
+`;
