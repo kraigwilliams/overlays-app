@@ -16,7 +16,7 @@ function Home() {
           Visit on the Web.
         </p>
         <p>
-          <i className="fas fa-bookmark"></i>Save Your Views on Any Everything
+          <i className="fas fa-bookmark"></i>Save Your Views on Everything
         </p>
        
         <p>
