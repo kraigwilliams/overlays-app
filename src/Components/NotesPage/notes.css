@@ -12,6 +12,9 @@
   border-radius: 130px;
   width: 40%;
 }
+.fa-plus-square{
+  margin-right:10px;
+}
 
 .all-topics {
   padding: 15px;

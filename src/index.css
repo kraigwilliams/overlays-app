@@ -11,19 +11,20 @@
   text-decoration: none;
 }
 
+#root{
+  
+  height: 100%;
+}
 a:hover{
   color:#F15152;
 }
 
 .App{
+  height:100%;
   margin-top: 0;
   padding:0px;
-  
-  /* background: #EDB183; */
-  /* background:blue; */
-  
-  
-    margin-bottom:0;
+
+  margin-bottom:0;
 
 }
 

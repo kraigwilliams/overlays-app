@@ -9,6 +9,7 @@ function Home() {
 
   return (
     <div className="home-page">
+    <div className="home-page-top">
       <div className="home-left">
       <p>
           <i className="fas fa-bookmark"></i>Save Your Opinions on any Page You
@@ -33,6 +34,15 @@ function Home() {
             <span className="underline">Login</span>
           </Link>
         
+      </div>
+      
+    </div> 
+    <div className="home-bottom">
+    
+      <p>To demo Overlays you may login with:<br/>
+      username:kwill<br/>
+      password:1@Thinkful
+      </p>
       </div>
     </div>
   );

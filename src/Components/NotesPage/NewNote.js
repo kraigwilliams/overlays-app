@@ -23,8 +23,7 @@ class newNote extends Component {
   onSubmit = event => {
     event.preventDefault();
     const { note_title, note_contents, from_topic} = event.target;
-    //console.log("latest", event.target)
-    console.log("trying to get topic id", from_topic.value);
+    
     fetch(`${config.API_ENDPOINT}/notes`, {
       method: "POST",
       headers: {

@@ -8,7 +8,7 @@
   }
 
   .Input,
-  .Select {
+  .Select{
     height:30%;
     border: 1px solid #ddd;
     display: block;

@@ -15,7 +15,7 @@ handleDelete = event => {
     event.preventDefault();
 
     const topicId = this.props.topic.id;
-    console.log(topicId, "topicId")
+    
     fetch(`${config.API_ENDPOINT}/topics/${topicId}`, {
       method: "DELETE",
       headers: {
@@ -26,9 +26,7 @@ handleDelete = event => {
   };
 
   render() {
-    //const topicId= this.props.match.params.TopicId
-    
-    //console.log(slug, "slug")
+  
     return (
       <div className="all-topics">
         <Link to={`/topics/${this.props.topic.slug}`}>

@@ -9,9 +9,7 @@ class Logout extends Component {
 state ={
 loggedIn:false
 }
-  componentWillMount() {
-    document.title = "Login / Logout - Overlays";
-  }
+ 
 
   handleLogout = event => {
     event.preventDefault();
@@ -22,7 +20,7 @@ loggedIn:false
   };
 
   render() {
-    
+    document.title = "Login / Logout - Overlays";
 
     return (
       <>
