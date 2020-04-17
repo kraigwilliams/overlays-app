@@ -24,9 +24,10 @@ padding-top: 0px;
   justify-content: center;
   align-items:center;
 }
-.homepage *{
+.home-page *{
   font-size: 50px;
   font-weight: 900;
+  
 }
 
 .home-left {
