@@ -17,7 +17,7 @@ class AllNotes extends Component {
 
   state = {
     notes: [],
-    heading:null
+    heading:""
   };
 
   componentDidMount() {
