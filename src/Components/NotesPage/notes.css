@@ -125,8 +125,8 @@ select{
   margin-bottom: 30px;
   /* margin-left: 10px;
   margin-right: 10px; */
-  width:0.5em;
-  overflow-wrap: normal;
+  
+  overflow-x: scroll;
   /* text-align: center; */
 }
 
