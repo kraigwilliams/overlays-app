@@ -47,7 +47,7 @@ class AllNotes extends Component {
 
         {this.state.notes.map(note => {
           return (
-            <div key={note.note_title} className="all-notes">
+            <div key={note.note_title} className='all-notes'>
               
               
                 <h3>

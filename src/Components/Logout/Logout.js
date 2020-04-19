@@ -4,6 +4,10 @@ import TokenService from "../../Services/token-service";
 
 import {Button} from '../Utils/Utils';
 import './Logout.css'
+
+/*
+Logout is responsible for rendering the Logout page to end users.
+*/ 
 class Logout extends Component {
 
 state ={

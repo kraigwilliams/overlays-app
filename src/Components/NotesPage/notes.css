@@ -60,6 +60,7 @@
   box-shadow: 2px 2px 5px 5px gray;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom:30px;
   width: 50%;
   /* margin-top: 50px; */
   text-align: center;
@@ -67,20 +68,21 @@
 
   height: 500px;
 }
-
+/* 
 .note-form input,
-select,
-textarea {
+select{
   margin-left: auto;
   margin-right: auto;
   width: 50px;
   border-radius: 30px;
-  border: 2px solid #1e555c;
+   border: 2px solid #1e555c; 
+  
   margin-top: 30px;
   margin-top: 30px;
   width: 200px;
   text-align: center;
-}
+  
+} */
 
 #note-label {
   text-align: center;
@@ -88,10 +90,10 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
-.note-form textarea {
+/* .note-form textarea {
   height: 200px;
   width: 400px;
-}
+} */
 
 .visit-url {
   margin-bottom: 30px;
@@ -119,13 +121,11 @@ a {
 }
 
 .delete {
+  color: white;
   margin-top: 20px;
   margin-bottom: 10px;
   background: #f15152;
-  border: white;
-}
-.delete {
-  color: white;
+  /* border: white; */
 }
 
 .submit-topic-btn{

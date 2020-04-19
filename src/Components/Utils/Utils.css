@@ -4,11 +4,23 @@
 
 
   .Textarea{
-    
-    
+    /* height:20px; */
     height:40%;
+    /* border: 1px solid #ddd; */
     
-  }
+    font-size: 15px;
+    
+    margin-bottom:5px;
+    margin-left:auto;
+    margin-right:auto;
+    /* padding: 10px; */
+    text-align: center;
+    width: 40%;
+    border-radius: 4px;
+    
+    
+    
+  } 
 
   .Input,
   .Select{
@@ -28,12 +40,15 @@
   .Input::placeholder,
   .Textarea::placeholder {
     color: #ccc;
+    font-size: 0.7em;
+    text-align: center;
+    
   }
   
   .Textarea {
     resize: vertical;
   }
-  
+   
   .Button {
     order: 1px solid #aaa;
     background-color: #eee;

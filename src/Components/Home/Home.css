@@ -15,18 +15,25 @@ padding-top: 0px;
   /* height: 90%; */
   
 }
+
+.fa-bookmark{
+  margin-right: 10px;
+}
+
 .home-page{
   margin-left:auto;
   margin-right:auto;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width:80%;
   display:flex;
+  flex-direction:column;
   justify-content: center;
   align-items:center;
-  color:blue;
+  
 }
 .home-page *{
-  font-size: 50px;
+  /* font-size: 40px; */
+  
   /* font-weight: 900; */
   
 }
@@ -35,6 +42,7 @@ padding-top: 0px;
   
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: flex-start;
   /* margin-right: 100px; */
@@ -42,7 +50,7 @@ padding-top: 0px;
 }
 
 .home-right{
-    margin-top:300px;
+  
     display:flex;
   flex-direction: column;
   text-align: center;
@@ -69,10 +77,9 @@ padding-top: 0px;
 
   
 @media only screen and (min-width: 768px) {
-  .home-page *{
-    color:red;
-    display: flex;
-    flex-direction: row;
-    
+  
+  .home-page-top{
+    flex-direction:row;
   }
+
 }

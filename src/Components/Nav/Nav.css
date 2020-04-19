@@ -1,7 +1,7 @@
 nav,.nav-color{
-    margin-top:none;
+    margin-top:0px;
     background:#1E555C;
-    margin-bottom:30px;
+    /* margin-bottom:30px; */
     color:white;
 }
 

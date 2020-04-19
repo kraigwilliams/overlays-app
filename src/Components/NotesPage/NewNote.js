@@ -73,7 +73,8 @@ class newNote extends Component {
             Enter Note Content
           </label>
           <Textarea
-            id="note_contents"
+          required
+            // id="note_contents"
             name="note_contents"
             placeholder="Enter Note Text"
           ></Textarea>
