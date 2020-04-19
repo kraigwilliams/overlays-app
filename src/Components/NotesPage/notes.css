@@ -110,23 +110,26 @@ select{
   width: 400px;
 } */
 
-.visit-url {
-  margin-bottom: 30px;
-  /* margin-left: 10px;
-  margin-right: 10px; */
-  width:40%;
-  overflow-wrap: normal;
-  /* text-align: center; */
-}
+
 .list-contents {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 1em;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
+
+.visit-url {
+  margin-bottom: 30px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  width:0.5em;
+  overflow-wrap: normal;
+  /* text-align: center; */
+}
+
 /* .list-contents p{
   margin-left:auto;
   margin-right:auto;
