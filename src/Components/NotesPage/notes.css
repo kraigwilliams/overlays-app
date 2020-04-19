@@ -20,8 +20,10 @@
   margin-right:10px;
 }
 .all-topics {
-  padding: 30px;
-  padding-right:100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* padding-top: 30px; */
+  
   background: #f4d8cd;
   font-family: "Coda Caption", sans-serif;
   border: 5px solid #f4d8cd;
