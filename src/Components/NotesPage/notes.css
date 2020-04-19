@@ -21,6 +21,7 @@
 }
 .all-topics {
   padding: 30px;
+  padding-right:100px;
   background: #f4d8cd;
   font-family: "Coda Caption", sans-serif;
   border: 5px solid #f4d8cd;
