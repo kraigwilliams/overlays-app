@@ -49,6 +49,8 @@
   font-family: "Coda Caption", sans-serif;
   color: #1e555c;
 }
+
+
 .note-form {
   background: #f4d8cd;
   display: flex;
@@ -61,13 +63,24 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom:30px;
-  width: 50%;
+  /* width: 50%; */
   /* margin-top: 50px; */
   text-align: center;
   padding: 30px;
 
-  height: 500px;
+  height: 80vh;
+  width:70vw;
 }
+
+@media(min-width:768px){
+  .note-form {
+    
+  
+    height: 70%;
+    width:50%;
+  }
+}
+
 /* 
 .note-form input,
 select{
