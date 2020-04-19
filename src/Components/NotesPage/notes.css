@@ -112,6 +112,7 @@ select{
   margin-bottom: 30px;
   margin-left: 10px;
   margin-right: 10px;
+  width:60%;
   /* text-align: center; */
 }
 .list-contents {
