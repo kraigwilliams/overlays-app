@@ -26,7 +26,8 @@
   font-family: "Coda Caption", sans-serif;
   border: 5px solid #f4d8cd;
   box-shadow: 2px 2px 5px 5px gray;
-  width: 45%;
+  /* width: 45%; */
+  width:70vw;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
