@@ -9,6 +9,7 @@ export default function PublicOnlyRoute({ component, ...props }) {
   const Component = component
   return (
     <Route
+    
       {...props}
       render={componentProps => (
         TokenService.hasAuthToken()
