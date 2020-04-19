@@ -112,8 +112,8 @@ select{
 
 .visit-url {
   margin-bottom: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
   width:40%;
   overflow-wrap: normal;
   /* text-align: center; */
