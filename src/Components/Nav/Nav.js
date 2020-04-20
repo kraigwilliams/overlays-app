@@ -13,11 +13,11 @@ class Nav extends Component{
     
     render(){
         return(
-            <nav>
+            // <nav>
 
  <Link className="nav-color" to="/logout">Login / Logout</Link>
 
-     </nav>
+    //  </nav>
     )
 
 

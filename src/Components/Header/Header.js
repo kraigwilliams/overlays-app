@@ -11,7 +11,8 @@ function Header(){
 return(
     <header>
     <Link to= "/"><h1 id="header">Overlays App</h1></Link>
-     <span id ="nav"><Nav /></span> 
+     {/* <span id ="nav"><Nav /></span>  */}
+    <Nav />
     </header>
 )
 
