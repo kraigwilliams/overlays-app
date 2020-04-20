@@ -1,3 +1,6 @@
+
+
+
 .home-page-top{
   height:100%;
   font-size:45px;
@@ -73,20 +76,24 @@ padding-top: 0px;
 
 }
 .home-left p{
+  color:red;
   margin-top: 0px;
   text-align:left;
 }
 
 
   
-@media only screen and(min-width: 768px) {
-  .home-left,.home-right,.home-bottom,.home-page-top {
-    font-size:0.3em;
+/* .home-page-top{
+  flex-direction:row;
+} */
+
+@media (min-width:768px) {
+  .home-left p {
+    font-size:15px;
+    color:blue;
   }
 
 
-  .home-page-top{
-    flex-direction:row;
-  }
+
 
 }
