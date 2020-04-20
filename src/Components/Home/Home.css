@@ -1,6 +1,6 @@
 .home-page-top{
   height:100%;
-
+  font-size:45px;
   /* width: 60%; */
   width:100%;
   margin-left: auto;
@@ -21,6 +21,7 @@ padding-top: 0px;
 }
 
 .home-page{
+  font-size:45px;
   margin-top:200px;
   margin-left:auto;
   margin-right:auto;
@@ -32,15 +33,15 @@ padding-top: 0px;
   align-items:center;
   
 }
-.home-page *{
+/* .home-page *{
    font-size: 45px;
   /* font-weight:700; */
   /* font-weight: 900; */
   
-}
+
 
 .home-left {
-  
+  font-size:45px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -51,7 +52,7 @@ padding-top: 0px;
 }
 
 .home-right{
-  
+  font-size:45px;
     display:flex;
   flex-direction: column;
   text-align: center;
@@ -61,6 +62,7 @@ padding-top: 0px;
 } 
 .home-bottom{
   margin-top:200px;
+  font-size:45px;
 }
 
 
