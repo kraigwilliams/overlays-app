@@ -80,8 +80,8 @@ padding-top: 0px;
 
   
 @media only screen and(min-width: 768px) {
-  .home-page,.home-left,.home-right,.home-bottom {
-    font-size:15px;
+  .home-left,.home-right,.home-bottom,.home-page-top {
+    font-size:0.3em;
   }
 
 
