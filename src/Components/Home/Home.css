@@ -78,7 +78,7 @@ padding-top: 0px;
 
   
 @media only screen and(min-width: 768px) {
-  .home-page *{
+  .home-page,.home-left,.home-right,.home-bottom {
     font-size:15px;
   }
 
