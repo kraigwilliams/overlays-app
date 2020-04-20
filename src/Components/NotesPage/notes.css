@@ -45,7 +45,7 @@
   height:100vh;
 } */
 
-.topics-heading {
+.topics-heading{
   font-weight: 400;
   margin-left: auto;
   margin-right: auto;
@@ -129,7 +129,7 @@ select{
   /* margin-left: 10px;
   margin-right: 10px; */
   
-  overflow-x: scroll;
+  overflow-x: auto;
   /* text-align: center; */
 }
 

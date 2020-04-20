@@ -10,7 +10,7 @@ import { Button } from "../Utils/Utils";
 /*
 NotesListPage is placed into a map function and is used to diplay a list of all a user's topics
 */ 
-class NoteListPage extends Component {
+class TopicsListPage extends Component {
   static defaultProps = {
     topic: {}
   }
@@ -67,4 +67,4 @@ handleDelete = event => {
 }
 
 
-export default NoteListPage;
+export default TopicsListPage;

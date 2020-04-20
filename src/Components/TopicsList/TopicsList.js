@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 //import config from '../../config'
 //import TokenService from '../../Services/token-service'
 import TopicsApiService from '../../Services/topics-api-service'
-import NoteListPage from '../NotesPage/NotesListPage';
+import TopicsListPage from '../NotesPage/TopicsListPage';
 import slugify from 'slugify';
 //import Nav from '../Nav/Nav'
 
@@ -42,7 +42,7 @@ class TopicsList extends Component {
 
         {this.state.topics.map( topic => {
 
-        return <NoteListPage key={topic.id} history={this.props.history} topic={topic}/> })}
+        return <TopicsListPage key={topic.id} history={this.props.history} topic={topic}/> })}
       
         </> ) 
 

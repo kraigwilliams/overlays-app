@@ -15,7 +15,7 @@ class Nav extends Component{
         return(
             // <nav>
 
- <Link className="nav-color" to="/logout">Login / Logout</Link>
+ <Link id="nav-color" to="/logout">Login / Logout</Link>
 
     //  </nav>
     )
