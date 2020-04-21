@@ -112,6 +112,10 @@ select{
   width: 400px;
 } */
 
+.list-contents *{
+margin-top:10px;
+margin-bottom:10px;
+}
 
 .list-contents {
   text-align: center;
