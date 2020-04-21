@@ -67,8 +67,7 @@ class newNote extends Component {
             placeholder="Note Title"
           />
         
-          <br />
-          <br />
+          
           <label id="note-label" htmlFor="note_contents">
             Enter Note Content
           </label>
@@ -78,8 +77,7 @@ class newNote extends Component {
             name="note_contents"
             placeholder="Enter Note Text"
           ></Textarea>
-          <br />
-          <br />
+          
           
           <Select name="from_topic" className="note-select">
             {this.state.topics.map(topic => {
