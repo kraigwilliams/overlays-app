@@ -1,9 +1,16 @@
 #nav-color{
     
     /* margin-bottom:30px; */
-    color:white;
+    color:white; 
+    font-size:20px;
 }
 
-.nav-color:hover{
+#nav-color:hover{
 color:#F15152;
 }
+
+/* @media all and( min-width:768px){
+    #nav-color{
+        font-size: 20px;
+    }
+} */
