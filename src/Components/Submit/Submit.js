@@ -53,7 +53,7 @@ class Submit extends Component {
       <h2>Submit New Topic</h2>
         <form className="submit-form" onSubmit={this.onSubmit}>
           <h3><label htmlFor="submit-name">New Topic Name </label></h3>
-        <Input id="submit-name" required type="text" name="topic_name" placeholder="Submit New Topic" />
+        <Input id="submit-name" required type="text" name="topic_name" placeholder="New Topic" />
           
         
           <h3><label htmlFor="submit-url">New Topic URL</label></h3>

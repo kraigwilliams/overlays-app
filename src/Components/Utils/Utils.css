@@ -2,7 +2,7 @@
 
 
 .Textarea{
-    
+    width:30vw;
   border-radius: 100px;
   margin-bottom:5px;
 margin-left:auto;
@@ -14,14 +14,7 @@ text-align: center;
 
 @media(min-width:768px){
 
-  .Textarea{
-
-/* height:40%; */
-
-/* width: 40%; */
-
-
-  }
+  
 
 }
 
@@ -39,16 +32,30 @@ text-align: center;
     margin-right:auto;
     padding: 10px;
     text-align: left;
-    width: 200px;
+    width: 30vw;
     /* border-radius: 4px; */
   }
   
+
+
   .Input::placeholder,
   .Textarea::placeholder {
     color: #ccc;
-    font-size: 0.7em;
+    font-size: 0.6em;
     text-align: center;
     
+    
+  }
+  
+  @media all and (min-width:768px){
+    .Input::placeholder,
+    .Textarea::placeholder {
+      color: #ccc;
+      font-size: 0.7em;
+      text-align: center;
+      
+      
+    }
   }
   
   /* .Textarea {
