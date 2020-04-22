@@ -1,5 +1,5 @@
 
-<p style="text-align:center"> <h1>Overlays</h1></p>
+ <h1>Overlays</h1>
 
 This app was created as a way to save your views on any content to come
 across on the internet.
