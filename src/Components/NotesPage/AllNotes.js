@@ -23,7 +23,7 @@ class AllNotes extends Component {
   };
 
   
-  componentDidMount= ()=> {
+  componentDidMount = ()=> {
     const topicName = this.props.match.params.topicName.replace("-"," ") || {};
   
     document.title = `${topicName} notes - Overlays`;
@@ -32,10 +32,9 @@ class AllNotes extends Component {
   .then(data=>this.setState({ notes: data, heading: topicName}))};
   
   
- handleDeleteNote = (event)=>{
-   // const topicName = this.props.match.params.topicName.replace("-"," ") || {};
-  // console.log(this, 'this')
-   NotesApiService.deleteNote(event)
+ handleDeleteNote = async (event)=>{
+  
+   await NotesApiService.deleteNote(event)
    this.componentDidMount()
   
   };
@@ -72,7 +71,7 @@ class AllNotes extends Component {
                   {note.note_title}
                 </h3>
               
-              <p>{note.note_contents}</p>
+              <p className= 'note_contents'>{note.note_contents}</p>
             </div>
           );
         })}
