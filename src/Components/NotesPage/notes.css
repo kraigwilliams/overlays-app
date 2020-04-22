@@ -95,20 +95,7 @@ width:70vw;
   /* width:70vw; */
 }
 
-.note-form input,.note-form button {
-  
-  
-  /* margin-top:30px; */
-  margin-bottom:30px;
-  width: 200px;
-  font-size: 1em;
-}
 
-/* .note-form textarea{
-  color:red;
-  font-size: 40px;
-  height:300px;
-} */
 
 @media(min-width:768px){
   /* .note-form {
