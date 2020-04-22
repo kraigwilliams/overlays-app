@@ -27,7 +27,7 @@ loggedIn:false
     document.title = "Login / Logout - Overlays";
 
     return (
-      <>
+      <div className='logout-page'>
         <p>
           <span >Are you sure you want to logout?</span>
           <Button className="logout-cancel" type="submit" onClick={() => this.props.history.push("/")}>
@@ -40,7 +40,7 @@ loggedIn:false
         <form onSubmit={this.handleLogout}>
           <Button type="submit">Logout</Button>
         </form>
-      </>
+      </div>
     );
   }
 }
