@@ -13,12 +13,14 @@
   border-radius: 200px;
   width: 40vw;
   padding:50px;
-  padding-right:100px;
+  
 }
 
 .note_contents {
-  margin:20px;
+  margin-left:auto;
+  margin-right:auto;
   color:blue;
+  text-align: center;
 }
 .fa-plus-square{
   margin-right:10px;
