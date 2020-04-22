@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 //import config from "../../config";
 //import TokenService from "../../Services/token-service";
-import NotesApiService from '../../Services/notes-api.service'
+import NotesApiService from '../../Services/notes-api.service';
 //import Note from './Note'
 import { Link } from "react-router-dom";
 import "./notes.css";
@@ -17,21 +17,27 @@ class AllNotes extends Component {
 
   state = {
     notes: [],
-    heading:""
+    heading:"",
+    deleted:false,
+    topicUrl:''
   };
 
-  componentDidMount() {
-    const topicName = this.props.match.params.topicName.replace("-"," ") || {}
-    document.title = `${topicName} notes - Overlays`
+  
+  componentDidMount= ()=> {
+    const topicName = this.props.match.params.topicName.replace("-"," ") || {};
+  
+    document.title = `${topicName} notes - Overlays`;
     
   NotesApiService.getNotes(topicName)
-  .then(data=>this.setState({ notes: data, heading: topicName}))}
+  .then(data=>this.setState({ notes: data, heading: topicName}))};
   
   
- async handleDeleteNote(event){
+ handleDeleteNote = (event)=>{
+   // const topicName = this.props.match.params.topicName.replace("-"," ") || {};
+  // console.log(this, 'this')
+   NotesApiService.deleteNote(event)
+   this.componentDidMount()
   
-   await NotesApiService.deleteNote(event)
-    await NotesApiService.getNotes();
   };
 
   render() {
@@ -55,10 +61,14 @@ class AllNotes extends Component {
                     name="delete-btn"
                     className="delete-btn"
                     value={note.id}
-                    onClick={this.handleDeleteNote}
+                    onClick={(event)=>this.handleDeleteNote(event)}
                   >
                     <i className="far fa-trash-alt"></i>
                   </button>
+                  
+                  
+
+
                   {note.note_title}
                 </h3>
               

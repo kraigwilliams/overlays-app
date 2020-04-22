@@ -27,7 +27,7 @@ const NotesApiService = {
         authorization: "bearer " + TokenService.getAuthToken()
       }
     })
-
+.then(this.getNotes())
 
 }
 
