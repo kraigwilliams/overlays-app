@@ -2,7 +2,7 @@
   font-family: "Coda Caption", sans-serif;
   border: 2px solid #7cb317;
   overflow-x: auto;
-  overflow-y: auto;
+  
   margin-left: auto;
   margin-right: auto;
   background: #f4d8cd;
@@ -11,7 +11,7 @@
   box-shadow: 3px 3px 3px 3px gray;
   margin-bottom: 50px;
   border-radius: 200px;
-  width: 40vw;
+  width: 50vw;
   padding:50px;
   
 }
