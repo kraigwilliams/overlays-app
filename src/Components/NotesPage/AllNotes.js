@@ -58,6 +58,7 @@ class AllNotes extends Component {
                 <h3>
                   <button
                     name="delete-btn"
+                    aria-label="delete-note"
                     className="delete-btn"
                     value={note.id}
                     onClick={(event)=>this.handleDeleteNote(event)}

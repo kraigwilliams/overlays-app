@@ -13,6 +13,17 @@ It can be accessed live [here](https://overlays.now.sh/).
 React and vanilla css is used in this design on the front end. Fetch api is used to connect to the back-end.
 which is available ate
 
+
+## Screenshots
+
+#### Home Page
+![home-page](Readme_assets/desktop-home.png)
+
+
+#### Dashboard
+![dasboard](Readme_assets/dashboard-desktop.png)
+
+
 ## Summary
 
 Overlays App is a way for someone to make notes of any webpage that they visit. They can leave their views 
