@@ -60,6 +60,8 @@ class newNote extends Component {
           </label>
          
           <Input
+          aria-label="enter note title"
+          aria-required="true"
           required
             type="text"
             id="note_title"
@@ -72,6 +74,8 @@ class newNote extends Component {
             Enter Note Content
           </label>
           <Textarea
+          aria-label="write note contents here"
+          aria-required="true"
           required
             // id="note_contents"
             name="note_contents"
@@ -79,7 +83,7 @@ class newNote extends Component {
           ></Textarea>
           
           
-          <Select name="from_topic" className="note-select">
+          <Select name="from_topic" aria-label='select a topic' className="note-select">
             {this.state.topics.map(topic => {
               return (
                 <option name={topic.id} value={topic.id} key={topic.id}>
@@ -88,7 +92,7 @@ class newNote extends Component {
               );
             })}
           </Select>
-          <Button className="submit-topic-btn" type="submit">Submit</Button>
+          <Button aria-label="submit new note" className="submit-topic-btn" type="submit">Submit</Button>
         </form>
       </>
     );

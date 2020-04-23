@@ -63,6 +63,7 @@ LoginForm is the Component which holds the JSX for loggging in to the app.
             User name
           </label>
           <Input
+          aria-required="true"
             required
             name='user_name'
             id='LoginForm__user_name'
@@ -75,6 +76,7 @@ LoginForm is the Component which holds the JSX for loggging in to the app.
           </label>
           <Input
             required
+            aria-required="true"
             name='password'
             type='password'
             id='LoginForm__password'
