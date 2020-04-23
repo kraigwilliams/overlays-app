@@ -17,7 +17,7 @@ which is available ate
 ## Screenshots
 
 #### Home Page
-![home-page](Readme_assets/desktop-home.png)
+![home-page](Readme_assets/desktop-home-page.png)
 
 
 #### Dashboard
