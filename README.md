@@ -4,7 +4,7 @@
 This app was created as a way to save your views on any content to come
 across on the internet.
 
-It can be accessed live [here](https://overlays.now.sh/).
+It can be accessed live at this link[Overlays](https://overlays.now.sh/).
 
 
 
