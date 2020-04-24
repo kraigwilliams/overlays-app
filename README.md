@@ -21,7 +21,7 @@ which is available ate
 
 
 #### Dashboard
-![dasboard](Readme_assets/dashboard-desktop.png)
+![dashboard](Readme_assets/dashboard-desktop.png)
 
 
 ## Summary
