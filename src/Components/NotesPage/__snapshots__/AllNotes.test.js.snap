@@ -2,7 +2,9 @@
 
 exports[`<AllNotes/> renders the UI as expected 1`] = `
 Array [
-  <h2 />,
+  <h2>
+    
+  </h2>,
   <p>
     <a
       href="/new-note"

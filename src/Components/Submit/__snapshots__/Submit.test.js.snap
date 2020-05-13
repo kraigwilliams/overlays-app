@@ -17,10 +17,12 @@ Array [
       </label>
     </h3>
     <input
+      aria-required="true"
       className="Input "
       id="submit-name"
       name="topic_name"
-      placeholder="Submit New Topic"
+      placeholder="New Topic"
+      required={true}
       type="text"
     />
     <h3>
@@ -31,17 +33,20 @@ Array [
       </label>
     </h3>
     <input
+      aria-required="true"
       className="Input "
       id="submit-url"
       name="topic_url"
       placeholder="Url to Add"
+      required={true}
       type="text"
     />
     <button
       className="Button submit-topic-btn"
       type="submit"
     >
-       Submit
+       
+      Submit
     </button>
   </form>,
 ]

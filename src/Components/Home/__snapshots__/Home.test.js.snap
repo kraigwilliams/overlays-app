@@ -20,7 +20,7 @@ exports[`<Header/> renders the UI as expected 1`] = `
         <i
           className="fas fa-bookmark"
         />
-        Save Your Views on Any Everything
+        Save Your Views on Everything
       </p>
       <p>
         <i
@@ -63,11 +63,11 @@ exports[`<Header/> renders the UI as expected 1`] = `
     className="home-bottom"
   >
     <p>
-      To demo Overlays you may login with:
+      To demo Overlays App you may login with:
       <br />
-      username:kwill
+      username: kwill
       <br />
-      password:1@Thinkful
+      password: 1@Thinkful
     </p>
   </div>
 </div>

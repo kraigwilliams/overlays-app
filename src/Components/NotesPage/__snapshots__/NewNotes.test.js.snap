@@ -16,6 +16,8 @@ Array [
       Enter Note Title
     </label>
     <input
+      aria-label="enter note title"
+      aria-required="true"
       className="Input "
       id="note_title"
       name="note_title"
@@ -23,8 +25,6 @@ Array [
       required={true}
       type="text"
     />
-    <br />
-    <br />
     <label
       htmlFor="note_contents"
       id="note-label"
@@ -32,18 +32,20 @@ Array [
       Enter Note Content
     </label>
     <textarea
+      aria-label="write note contents here"
+      aria-required="true"
       className="Textarea "
-      id="note_contents"
       name="note_contents"
       placeholder="Enter Note Text"
+      required={true}
     />
-    <br />
-    <br />
     <select
+      aria-label="select a topic"
       className="Select note-select"
       name="from_topic"
     />
     <button
+      aria-label="submit new note"
       className="Button submit-topic-btn"
       type="submit"
     >

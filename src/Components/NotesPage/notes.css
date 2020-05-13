@@ -124,10 +124,13 @@ select{
 
 #note-label {
   font-size:0.7em;
+
   text-align: center;
   width: 200px;
+  margin-top:10px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom:10px;
 }
 /* .note-form textarea {
   height: 200px;

@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Logout/> renders the UI as expected 1`] = `
-Array [
+<div
+  className="logout-page"
+>
   <p>
     <span>
       Are you sure you want to logout?
@@ -19,7 +21,7 @@ Array [
          NO
       </span>
     </button>
-  </p>,
+  </p>
   <form
     onSubmit={[Function]}
   >
@@ -29,6 +31,6 @@ Array [
     >
       Logout
     </button>
-  </form>,
-]
+  </form>
+</div>
 `;

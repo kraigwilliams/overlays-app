@@ -17,6 +17,7 @@ exports[`<Login/> renders the UI as expected 1`] = `
       User name
     </label>
     <input
+      aria-required="true"
       className="Input "
       id="LoginForm__user_name"
       name="user_name"
@@ -32,6 +33,7 @@ exports[`<Login/> renders the UI as expected 1`] = `
       Password
     </label>
     <input
+      aria-required="true"
       className="Input "
       id="LoginForm__password"
       name="password"

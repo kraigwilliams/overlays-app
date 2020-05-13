@@ -3,7 +3,6 @@
 exports[`Header /> renders the UI as expected 1`] = `
 <header>
   <a
-    className="header-color"
     href="/"
     onClick={[Function]}
   >
@@ -13,18 +12,12 @@ exports[`Header /> renders the UI as expected 1`] = `
       Overlays App
     </h1>
   </a>
-  <span
-    id="nav"
+  <a
+    href="/logout"
+    id="nav-color"
+    onClick={[Function]}
   >
-    <nav>
-      <a
-        className="nav-color"
-        href="/logout"
-        onClick={[Function]}
-      >
-        Login / Logout
-      </a>
-    </nav>
-  </span>
+    Login / Logout
+  </a>
 </header>
 `;

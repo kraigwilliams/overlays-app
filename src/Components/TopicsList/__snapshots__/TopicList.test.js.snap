@@ -3,6 +3,7 @@
 exports[`<TopicList/> renders the UI as expected 1`] = `
 Array [
   <a
+    className="submit-heading"
     href="/submit"
     onClick={[Function]}
   >

@@ -6,7 +6,6 @@ exports[`<App/> renders the UI as expected 1`] = `
 >
   <header>
     <a
-      className="header-color"
       href="/"
       onClick={[Function]}
     >
@@ -16,19 +15,13 @@ exports[`<App/> renders the UI as expected 1`] = `
         Overlays App
       </h1>
     </a>
-    <span
-      id="nav"
+    <a
+      href="/logout"
+      id="nav-color"
+      onClick={[Function]}
     >
-      <nav>
-        <a
-          className="nav-color"
-          href="/logout"
-          onClick={[Function]}
-        >
-          Login / Logout
-        </a>
-      </nav>
-    </span>
+      Login / Logout
+    </a>
   </header>
   <div
     className="home-page"
@@ -49,7 +42,7 @@ exports[`<App/> renders the UI as expected 1`] = `
           <i
             className="fas fa-bookmark"
           />
-          Save Your Views on Any Everything
+          Save Your Views on Everything
         </p>
         <p>
           <i
@@ -92,11 +85,11 @@ exports[`<App/> renders the UI as expected 1`] = `
       className="home-bottom"
     >
       <p>
-        To demo Overlays you may login with:
+        To demo Overlays App you may login with:
         <br />
-        username:kwill
+        username: kwill
         <br />
-        password:1@Thinkful
+        password: 1@Thinkful
       </p>
     </div>
   </div>
