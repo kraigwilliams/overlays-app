@@ -39,12 +39,17 @@ class AllNotes extends Component {
   
   };
 
+  goBack = ()=>{
+    
+    this.props.history.goBack();
+  }
+
   render() {
     
 
     return (
       <>
-      
+      <button onClick={this.goBack}>Go Back</button>
           <h2>{this.state.heading}</h2>  
         <p>
           <Link to="/new-note">Add New Note</Link>

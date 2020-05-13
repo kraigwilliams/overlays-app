@@ -50,9 +50,16 @@ class newNote extends Component {
       );
   };
 
+
+  goBack = ()=>{
+    
+    this.props.history.goBack();
+  }
+
   render() {
     return (
       <>
+      <button onClick={this.goBack}>Go Back</button>
         <h3>Make a new Note</h3>
         <form className="note-form" onSubmit={this.onSubmit}>
           <label id="note-label" htmlFor="note_title">

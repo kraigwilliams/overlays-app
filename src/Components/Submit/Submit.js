@@ -41,9 +41,15 @@ class Submit extends Component {
       .then(this.props.history.push("/topics"));
   };
 
+  goBack = ()=>{
+    
+    this.props.history.goBack();
+  }
+
   render() {
     return (
       <>
+      <button onClick={this.goBack}>Go Back</button>
         <h2>Submit New Topic</h2>
         <form className="submit-form" onSubmit={this.onSubmit}>
           <h3>
