@@ -123,6 +123,7 @@ select{
 } */
 
 #note-label {
+  font-size:0.7em;
   text-align: center;
   width: 200px;
   margin-left: auto;
