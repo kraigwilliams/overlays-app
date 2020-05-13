@@ -14,7 +14,7 @@ import NewNote from '../NotesPage/NewNote'
 
 import AllNotes from '../NotesPage/AllNotes';
 import Logout from '../Logout/Logout'
-
+import Error from '../Error/Error';
 
 //home component that wraps other components
 class App extends Component{
@@ -26,7 +26,7 @@ class App extends Component{
 
     return (
     <>
-
+<Error>
     
     <main className='App'>
     <Header />
@@ -79,6 +79,7 @@ class App extends Component{
 </Switch>
    
     </main>
+    </Error>
     </>
   )
 }

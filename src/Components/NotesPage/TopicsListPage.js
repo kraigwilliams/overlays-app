@@ -16,7 +16,7 @@ class TopicsListPage extends Component {
   }
   
   /**
-   * 
+   *  delete a topic from the list
    * @param {}
    */
 
