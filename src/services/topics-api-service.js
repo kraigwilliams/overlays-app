@@ -2,8 +2,14 @@ import TokenService from './token-service'
 import config from '../config'
 
 const TopicsApiService = {
+
+
+
+
+
+  
   /**
-  * gets all a users  topics from the database.
+  * gets all a user's  topics from the database.
    * 
    */
   getTopics (){
