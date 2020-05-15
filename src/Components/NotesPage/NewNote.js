@@ -59,7 +59,7 @@ class newNote extends Component {
   render() {
     return (
       <>
-      <span className="go-back" onClick={this.goBack}><i class="fas fa-arrow-circle-left fa-3x"></i>
+      <span className="go-back" onClick={this.goBack}><i class="fas fa-arrow-circle-left fa-2x"></i>
 
 </span >
         <h3>Make a new Note</h3>

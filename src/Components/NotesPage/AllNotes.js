@@ -49,7 +49,7 @@ class AllNotes extends Component {
 
     return (
       <>
-      <span className="go-back" onClick={this.goBack}><i class="fas fa-arrow-circle-left fa-3x"></i>
+      <span className="go-back" onClick={this.goBack}><i class="fas fa-arrow-circle-left fa-2x"></i>
 
 </span >
           <h2>{this.state.heading}</h2>  
@@ -64,7 +64,7 @@ class AllNotes extends Component {
               
                 <h3>
                   <span
-                    name="delete-btn"
+                    
                     aria-label="delete-note"
                     className="delete-btn"
                     value={note.id}

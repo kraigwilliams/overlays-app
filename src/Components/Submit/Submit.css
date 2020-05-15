@@ -13,9 +13,7 @@
   box-shadow: 2px 2px 5px 5px gray;
 }
 
-.go-back:hover *{
-transform: scale(1.5);
-}
+
 
 
 @media all and (mid-width:768px){
