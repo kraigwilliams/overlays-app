@@ -49,7 +49,9 @@ class Submit extends Component {
   render() {
     return (
       <>
-      <button onClick={this.goBack}>Go Back</button>
+      <span className="go-back" onClick={this.goBack}><i class="fas fa-arrow-circle-left fa-3x"></i>
+
+</span >
         <h2>Submit New Topic</h2>
         <form className="submit-form" onSubmit={this.onSubmit}>
           <h3>

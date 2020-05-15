@@ -59,7 +59,9 @@ class newNote extends Component {
   render() {
     return (
       <>
-      <button onClick={this.goBack}>Go Back</button>
+      <span className="go-back" onClick={this.goBack}><i class="fas fa-arrow-circle-left fa-3x"></i>
+
+</span >
         <h3>Make a new Note</h3>
         <form className="note-form" onSubmit={this.onSubmit}>
           <label id="note-label" htmlFor="note_title">
