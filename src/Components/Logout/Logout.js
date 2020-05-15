@@ -30,7 +30,7 @@ loggedIn:false
       <div className='logout-page'>
         <p>
           <span >Are you sure you want to logout?</span>
-          <Button className="logout-cancel" type="submit" onClick={() => this.props.history.push("/")}>
+          <Button className="logout-cancel" type="submit" onClick={() => this.props.history.goBack()}>
             {" "}
             <i className="fas fa-backspace"></i>
             <span> NO</span>
